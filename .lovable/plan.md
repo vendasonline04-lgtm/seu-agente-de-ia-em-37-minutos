@@ -1,26 +1,28 @@
-## Mudança no Bloco 1 (Hero)
+## Objetivo
+Ajustar a headline do Bloco 1 (Hero) na versão desktop para:
+1. Ficar **menor** (reduzir o tamanho atual de `md:text-6xl`).
+2. Ficar **alinhada/justificada** com a sub-headline, ou seja, com a frase ocupando toda a largura da coluna — começando na extremidade esquerda e terminando na direita (text-justify).
 
-**Arquivo afetado:** `src/components/sales/Hero.tsx` + nova imagem em `src/assets/`.
+## Mudanças
 
-### 1. Nova imagem
+**Arquivo:** `src/components/sales/Hero.tsx` (linha 17, tag `<h1>`)
 
-Copiar a imagem enviada (laptop roxo com "Seu Agente de IA do Zero") para `src/assets/hero-produto.png` e importar via ES6 no `Hero.tsx`, substituindo o `/produto.png` atual.
+Classes atuais:
+```
+text-balance font-bold leading-[1.05] sm:text-5xl md:text-6xl text-white text-center text-3xl
+```
 
-### 2. Reordenação responsiva
+Novas classes:
+```
+font-bold leading-[1.1] text-white text-center text-3xl sm:text-4xl md:text-5xl md:text-justify
+```
 
-Hoje a estrutura é uma única `<div>` flex com duas colunas (texto à esquerda, imagem à direita). No mobile vira coluna e a imagem fica **abaixo** do botão.
+Detalhes:
+- Removido `text-balance` no desktop (ele impede o justify funcionar bem, pois rebalanceia as quebras de linha).
+- Reduzido tamanho desktop: `md:text-6xl` → `md:text-5xl` (e `sm:text-5xl` → `sm:text-4xl` para escalonar bem).
+- Adicionado `md:text-justify` para justificar a frase no desktop (extremidades esquerda/direita), mantendo `text-center` no mobile.
+- Mobile (`text-3xl`, centralizado) permanece como está.
 
-Vou reestruturar para que:
-
-- **Mobile (`< md`)**: ordem vertical → Título → Subtítulo → **Imagem** → Botão CTA
-- **Desktop (`md+`)**: layout em duas colunas → Texto (título + subtítulo + botão) à esquerda, **Imagem** à direita
-
-### Detalhe técnico
-
-Em vez de manter o botão dentro da coluna de texto, vou:
-
-- Tirar o botão de dentro da coluna de texto.
-- Usar uma estrutura mobile-first em coluna: `[texto] [imagem] [botão]`.
-- Em `md+`, aplicar `md:grid md:grid-cols-2` onde a coluna esquerda agrupa texto + botão e a coluna direita exibe a imagem (usando `md:order-*` ou repetindo o botão fora do grid mobile via classes `md:hidden` / `hidden md:inline-flex` — vou optar pela abordagem com `order` para evitar duplicação do CTA).
-
-Resultado: zero mudança em outros componentes, sem novos tokens, sem mudança de copy.
+## Resultado esperado
+- **Mobile:** headline centralizada, tamanho 3xl (sem alteração visual).
+- **Desktop:** headline menor (5xl em vez de 6xl), justificada — primeira palavra encosta na esquerda, última palavra encosta na direita da coluna, igual a um parágrafo justificado.

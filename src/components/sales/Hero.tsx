@@ -36,7 +36,7 @@ export function Hero() {
         </p>
 
         <div className="mt-10">
-          <CTAButton>Quero meu agente em 37 min</CTAButton>
+          <CTAButton>Quero meu agente de ia agora</CTAButton>
         </div>
       </div>
     </section>

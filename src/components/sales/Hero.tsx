@@ -19,7 +19,7 @@ export function Hero() {
           Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu <span className="text-alert">Agente de IA do Zero</span> em 37 minutos!
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80 sm:text-xl">
-          Deixa eu ser direta com você.
+          Seu Agente de IA do Zero é a aula prática onde você foca e finalmente coloca seu agente no ar, mesmo sem saber nada de programação.
         </p>
         <p className="mt-4 text-base text-white/70">
           Acesso imediato. Você cria seu primeiro agente ainda hoje.

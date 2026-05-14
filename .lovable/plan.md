@@ -1,28 +1,17 @@
 ## Objetivo
-Ajustar a headline do Bloco 1 (Hero) na versão desktop para:
-1. Ficar **menor** (reduzir o tamanho atual de `md:text-6xl`).
-2. Ficar **alinhada/justificada** com a sub-headline, ou seja, com a frase ocupando toda a largura da coluna — começando na extremidade esquerda e terminando na direita (text-justify).
+Remover a seta (ícone `ArrowRight`) de todos os botões CTA da página e usar todo o espaço do botão apenas com o texto centralizado.
 
-## Mudanças
+## Mudança
 
-**Arquivo:** `src/components/sales/Hero.tsx` (linha 17, tag `<h1>`)
+**Arquivo:** `src/components/sales/CTAButton.tsx`
 
-Classes atuais:
-```
-text-balance font-bold leading-[1.05] sm:text-5xl md:text-6xl text-white text-center text-3xl
-```
+- Remover o import de `ArrowRight` do `lucide-react`.
+- Remover o `<ArrowRight />` do JSX.
+- Remover o `<span>` em volta do texto (não é mais necessário, já que só há texto).
+- Remover `gap-3` (não há mais 2 elementos para espaçar).
+- Remover a classe `group` (era usada só para animar a seta no hover).
 
-Novas classes:
-```
-font-bold leading-[1.1] text-white text-center text-3xl sm:text-4xl md:text-5xl md:text-justify
-```
+Resultado: o botão fica apenas com o texto ocupando todo o espaço interno, mantendo o gradiente, padding, sombra e demais estilos atuais.
 
-Detalhes:
-- Removido `text-balance` no desktop (ele impede o justify funcionar bem, pois rebalanceia as quebras de linha).
-- Reduzido tamanho desktop: `md:text-6xl` → `md:text-5xl` (e `sm:text-5xl` → `sm:text-4xl` para escalonar bem).
-- Adicionado `md:text-justify` para justificar a frase no desktop (extremidades esquerda/direita), mantendo `text-center` no mobile.
-- Mobile (`text-3xl`, centralizado) permanece como está.
-
-## Resultado esperado
-- **Mobile:** headline centralizada, tamanho 3xl (sem alteração visual).
-- **Desktop:** headline menor (5xl em vez de 6xl), justificada — primeira palavra encosta na esquerda, última palavra encosta na direita da coluna, igual a um parágrafo justificado.
+## Impacto
+Como todos os CTAs da página (`Hero`, `OfferCTA`, `Recap`, etc.) usam o componente `CTAButton`, a mudança em um único arquivo aplica em toda a página.

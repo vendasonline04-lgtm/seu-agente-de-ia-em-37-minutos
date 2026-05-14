@@ -1,19 +1,26 @@
-## Mudança
+## Mudança no Bloco 1 (Hero)
 
-No `src/components/sales/Hero.tsx`, dentro do `<h1>`, envolver o trecho **"Agente de IA do Zero"** em um `<span className="text-alert">` para colorir com `#FF7A00` (token `--brand-alert` já existente).
+**Arquivo afetado:** `src/components/sales/Hero.tsx` + nova imagem em `src/assets/`.
 
-### Antes
-```tsx
-<h1 className="... text-white">
-  Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu Agente de IA do Zero em 37 minutos!
-</h1>
-```
+### 1. Nova imagem
 
-### Depois
-```tsx
-<h1 className="... text-white">
-  Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu <span className="text-alert">Agente de IA do Zero</span> em 37 minutos!
-</h1>
-```
+Copiar a imagem enviada (laptop roxo com "Seu Agente de IA do Zero") para `src/assets/hero-produto.png` e importar via ES6 no `Hero.tsx`, substituindo o `/produto.png` atual.
 
-Sem mudanças em outros arquivos, sem novos tokens.
+### 2. Reordenação responsiva
+
+Hoje a estrutura é uma única `<div>` flex com duas colunas (texto à esquerda, imagem à direita). No mobile vira coluna e a imagem fica **abaixo** do botão.
+
+Vou reestruturar para que:
+
+- **Mobile (`< md`)**: ordem vertical → Título → Subtítulo → **Imagem** → Botão CTA
+- **Desktop (`md+`)**: layout em duas colunas → Texto (título + subtítulo + botão) à esquerda, **Imagem** à direita
+
+### Detalhe técnico
+
+Em vez de manter o botão dentro da coluna de texto, vou:
+
+- Tirar o botão de dentro da coluna de texto.
+- Usar uma estrutura mobile-first em coluna: `[texto] [imagem] [botão]`.
+- Em `md+`, aplicar `md:grid md:grid-cols-2` onde a coluna esquerda agrupa texto + botão e a coluna direita exibe a imagem (usando `md:order-*` ou repetindo o botão fora do grid mobile via classes `md:hidden` / `hidden md:inline-flex` — vou optar pela abordagem com `order` para evitar duplicação do CTA).
+
+Resultado: zero mudança em outros componentes, sem novos tokens, sem mudança de copy.

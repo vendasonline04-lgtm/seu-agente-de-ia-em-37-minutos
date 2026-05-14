@@ -14,7 +14,7 @@ export function Hero() {
         <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:items-center md:gap-16">
           {/* Texto: título + subtítulo (ordem 1 no mobile, esquerda no desktop) */}
           <div className="order-1 text-left md:order-none">
-            <h1 className="text-balance text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl text-white">
+            <h1 className="text-balance font-bold leading-[1.05] sm:text-5xl md:text-6xl text-white text-center text-3xl">
               Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu <span className="text-alert">Agente de IA do Zero</span> em 37 minutos!
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/80 sm:text-xl">

@@ -16,7 +16,7 @@ export function Hero() {
           Acesso imediato
         </div>
         <h1 className="text-balance text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl text-white">
-          Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu Agente de IA do Zero em 37 minutos!
+          Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu <span className="text-alert">Agente de IA do Zero</span> em 37 minutos!
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80 sm:text-xl">
           Saia daqui com seu primeiro agente rodando em <span className="font-bold text-alert">37 minutos</span>, mesmo que você não saiba nada.

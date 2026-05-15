@@ -1,4 +1,5 @@
 import { CTAButton } from "./CTAButton";
+import heroProduto from "@/assets/hero-produto.png";
 
 export function Hero() {
   return (
@@ -27,7 +28,7 @@ export function Hero() {
           {/* Coluna direita — imagem do produto */}
           <div className="flex-1 flex items-center justify-center">
             <img
-              src="/produto.png"
+              src={heroProduto}
               alt="Seu Agente de IA do Zero — imagem do produto"
               className="w-full max-w-lg rounded-2xl shadow-2xl"
             />

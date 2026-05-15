@@ -27,9 +27,20 @@ export function Recap() {
         </ul>
 
         <p className="mt-10 text-xl">
-          De <span className="line-through opacity-70">R$ 445</span> por apenas{" "}
-          <span className="font-bold text-alert">R$ 67,00</span>
+          De <span className="line-through opacity-70">R$ 445</span> por apenas
         </p>
+
+        {/* Preço com parcelamento em destaque */}
+        <div className="mt-3 flex flex-col items-center gap-1">
+          <div className="flex items-baseline gap-1">
+            <span className="text-sm font-semibold text-white/60">10x de</span>
+            <span className="font-display text-5xl font-bold leading-none text-alert">
+              R$ 8,12
+            </span>
+          </div>
+          <span className="text-base font-semibold text-white/60">OU</span>
+          <span className="text-xl font-bold text-white/80">ou R$ 67,00 à vista</span>
+        </div>
 
         <div className="mt-8">
           <CTAButton>Quero meu agente de IA do zero agora</CTAButton>
@@ -37,10 +48,13 @@ export function Recap() {
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm font-semibold">
           <span className="inline-flex items-center gap-2 text-alert">
-            <Zap className="h-4 w-4" /> Acesso imediato
+            <Zap className="h-4 w-4" /> Acesso Imediato
           </span>
-          <span className="inline-flex items-center gap-2 text-white/80">
-            <ShieldCheck className="h-4 w-4" /> Garantia de 7 dias sem perguntas
+          <span className="inline-flex items-center gap-2 text-alert">
+            <ShieldCheck className="h-4 w-4" /> Garantia de 7 dias
+          </span>
+          <span className="inline-flex items-center gap-2 text-alert">
+            Acesso Vitalício
           </span>
         </div>
       </div>

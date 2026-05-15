@@ -1,9 +1,37 @@
+import setaLaranja from "@/assets/seta-laranja.png";
+
 const steps = [
   { n: "01", title: "Configura o ambiente", desc: "Em menos de 5 minutos." },
   { n: "02", title: "Define o objetivo e o comportamento do agente", desc: "" },
   { n: "03", title: "Conecta as ferramentas e testa ao vivo", desc: "" },
   { n: "04", title: "Seu agente está rodando. Você criou.", desc: "" },
 ];
+
+function StepCard({ n, title, desc }: { n: string; title: string; desc: string }) {
+  return (
+    <div
+      className="group relative flex-1 rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1"
+      style={{ boxShadow: "var(--shadow-card)" }}
+    >
+      <div className="font-display text-5xl font-bold text-accent/20">{n}</div>
+      <h3 className="mt-3 text-xl font-bold text-primary">
+        Passo {parseInt(n)} → {title}
+      </h3>
+      {desc && <p className="mt-2 text-foreground/70">{desc}</p>}
+    </div>
+  );
+}
+
+function Arrow() {
+  return (
+    <img
+      src={setaLaranja}
+      alt=""
+      aria-hidden="true"
+      className="h-14 w-14 shrink-0 rotate-90 self-center md:h-16 md:w-16 md:rotate-0"
+    />
+  );
+}
 
 export function FourSteps() {
   return (
@@ -13,20 +41,17 @@ export function FourSteps() {
           Os 4 passos que você executa junto comigo:
         </h2>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {steps.map((s) => (
-            <div
-              key={s.n}
-              className="group relative rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1"
-              style={{ boxShadow: "var(--shadow-card)" }}
-            >
-              <div className="font-display text-5xl font-bold text-accent/20">{s.n}</div>
-              <h3 className="mt-3 text-xl font-bold text-primary">
-                Passo {parseInt(s.n)} → {s.title}
-              </h3>
-              {s.desc && <p className="mt-2 text-foreground/70">{s.desc}</p>}
-            </div>
-          ))}
+        <div className="mt-12 space-y-6">
+          <div className="flex flex-col items-stretch gap-6 md:flex-row md:items-center">
+            <StepCard {...steps[0]} />
+            <Arrow />
+            <StepCard {...steps[1]} />
+          </div>
+          <div className="flex flex-col items-stretch gap-6 md:flex-row md:items-center">
+            <StepCard {...steps[2]} />
+            <Arrow />
+            <StepCard {...steps[3]} />
+          </div>
         </div>
 
         <div className="mt-10 text-center text-lg">

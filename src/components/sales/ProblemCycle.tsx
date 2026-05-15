@@ -29,8 +29,8 @@ export function ProblemCycle() {
             "Tem gente automatizando processos e cobrando por isso",
             "Tem gente que saiu do zero e já tem portfólio",
           ].map((s, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="mt-1 font-bold text-alert">→</span>
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert" aria-hidden="true" />
               <span>{s}</span>
             </li>
           ))}

@@ -1,20 +1,17 @@
 export function Solution() {
   return (
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-balance text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
           O problema não é falta de informação.
         </h2>
         <p className="mt-6 text-xl text-white/85">
-          É informação demais, sem uma mão te guiando na ordem certa.
+          É informação demais, sem saber por onde começar.
         </p>
 
         <div className="mt-8 space-y-5 text-lg leading-relaxed">
           <p>
-            Você não precisa de mais um conteúdo para consumir.
-          </p>
-          <p>
-            Você precisa de <span className="font-bold text-alert">37 minutos</span> onde alguém cria junto com você — do zero ao agente funcionando, sem parar para teoria, sem te deixar travar.
+            Em 37 minutos, você mesmo constrói seu agente de IA do zero, sem travar, sem precisar de ajuda.
           </p>
         </div>
 
@@ -23,7 +20,7 @@ export function Solution() {
             Imagina você abrindo o computador, mostrando seu agente funcionando para alguém e dizendo:
           </p>
           <p className="mt-3 text-xl font-bold text-white">
-            "esse aqui eu fiz — e posso fazer para você também."
+            "esse aqui eu fiz, e posso fazer para você também."
           </p>
         </div>
 

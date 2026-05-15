@@ -21,7 +21,7 @@ export function Hero() {
               Seu Agente de IA do Zero é a aula prática onde você foca e finalmente coloca seu agente no ar, mesmo sem saber nada de programação.
             </p>
             <div className="mt-10">
-              <CTAButton>Quero meu agente de ia agora</CTAButton>
+              <CTAButton variant="orange">Quero meu agente de ia agora</CTAButton>
             </div>
           </div>
 

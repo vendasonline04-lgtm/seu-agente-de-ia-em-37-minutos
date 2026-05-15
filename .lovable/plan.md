@@ -1,9 +1,9 @@
-Vou tratar isso como prioridade de carregamento, sem alterar o visual da página.
+Diagnóstico: a página publicada está carregando corretamente. Testei a URL publicada e todos os recursos principais retornaram 200; também abri no navegador e a página de vendas apareceu. A tela do print com “Publish or update your Lovable project...” é de um link de preview/histórico antigo, não da página publicada atual.
 
-Plano:
-1. Reiniciar a preview para limpar cache de renderização e hidratação que pode deixar a tela sem carregar.
-2. Verificar novamente a rota `/` e confirmar se há erro de console ou resposta 500.
-3. Se a preview carregar, manter o código como está e orientar a atualização da URL pública via Publish/Update, porque a imagem enviada mostra a página publicada ainda não atualizada.
-4. Se ainda houver falha real, corrigir apenas o ponto que estiver quebrando o carregamento, sem mexer em texto, layout ou design.
+Plano de ação imediato:
+1. Manter o código da página como está, porque a rota pública está saudável e carregando.
+2. Orientar o uso da URL correta publicada: `https://seu-agente-de-ia-em-37-minutos.lovable.app`.
+3. Se você estiver vendo a tela escura no painel, sair da visualização de commit antigo/histórico e abrir a preview atual do projeto ou clicar em Publish/Update.
+4. Se ainda quiser uma mudança técnica, após aprovação posso adicionar uma tela de erro/fallback mais clara para falhas reais, mas isso não corrige esse print porque ele vem da camada de preview/publicação, não do app.
 
-Detalhe importante: a tela “Publish or update your Lovable project...” não é erro do site em si; ela aparece quando a URL pública ainda não recebeu o último Publish/Update.
+Resultado esperado: a página continua carregando imediatamente na URL publicada, sem alteração visual no funil.

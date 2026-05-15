@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="bg-primary px-4 py-12 text-primary-foreground">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="font-display text-2xl font-bold">Valentina</p>
+        <p className="font-display font-bold text-base">​ Seu Agente de IA do Zero – Simplifica-AI</p>
         <p className="mt-2 text-sm text-white/70">
           Suporte:{" "}
           <a href="mailto:contato@simplifica-ai.com" className="underline hover:text-alert">

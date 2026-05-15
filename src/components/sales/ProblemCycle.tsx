@@ -4,10 +4,10 @@ export function ProblemCycle() {
   return (
     <section className="bg-background px-4 py-20 text-foreground">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-balance text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-          Você não está parado por preguiça. Você está bugado.
+        <h2 className="text-balance text-center text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
+          Você não está parado por preguiça. Você está perdido.
         </h2>
-        <p className="mt-6 text-lg text-foreground/80">
+        <p className="mt-6 text-center text-lg text-foreground/80">
           Hoje você vive um ciclo que não te deixa sair do lugar.
         </p>
 
@@ -19,7 +19,7 @@ export function ProblemCycle() {
           />
         </div>
 
-        <p className="mt-10 text-lg font-semibold">
+        <p className="mt-10 text-center text-lg font-semibold">
           E enquanto você tenta entender por conta própria...
         </p>
 
@@ -41,7 +41,7 @@ export function ProblemCycle() {
             A diferença entre você e eles não é talento.
           </p>
           <p className="mt-2 text-lg">
-            É que eles pararam de tentar entender e começaram a criar.
+            É que eles pararam de tentar entender e colocaram a mão na massa do jeito certo.
           </p>
         </div>
       </div>

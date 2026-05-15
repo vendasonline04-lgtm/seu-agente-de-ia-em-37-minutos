@@ -1,17 +1,25 @@
 ## Objetivo
-Remover a seta (ícone `ArrowRight`) de todos os botões CTA da página e usar todo o espaço do botão apenas com o texto centralizado.
+No componente `ProblemCycle.tsx`, substituir a primeira lista de frases (as 4 com seta: "Você assiste um vídeo...", "Abre o computador...", "Vai buscar mais informação...", "Mais um vídeo...") pela imagem enviada pelo usuário.
 
-## Mudança
+## Passos
 
-**Arquivo:** `src/components/sales/CTAButton.tsx`
+1. Copiar a imagem enviada para `src/assets/ciclo-bugado.png` usando `code--copy` (de `user-uploads://Mais_um_vídeo_sem_entender_nada....png`).
 
-- Remover o import de `ArrowRight` do `lucide-react`.
-- Remover o `<ArrowRight />` do JSX.
-- Remover o `<span>` em volta do texto (não é mais necessário, já que só há texto).
-- Remover `gap-3` (não há mais 2 elementos para espaçar).
-- Remover a classe `group` (era usada só para animar a seta no hover).
+2. Editar `src/components/sales/ProblemCycle.tsx`:
+   - Adicionar `import cicloBugado from "@/assets/ciclo-bugado.png";`
+   - Remover o bloco `<ul>` que contém as 4 frases com seta (logo após "Hoje você vive um ciclo que não te deixa sair do lugar.").
+   - No lugar, inserir a imagem centralizada e responsiva:
+     ```tsx
+     <div className="mt-8 flex justify-center">
+       <img
+         src={cicloBugado}
+         alt="Ciclo de frustração: mais um vídeo sem entender nada, não sei por onde começar, todo mundo consegue menos eu, tanta informação que eu me perco, minha cabeça bugou de novo, toda hora eu travo e não consigo terminar"
+         className="w-full max-w-md rounded-2xl"
+       />
+     </div>
+     ```
 
-Resultado: o botão fica apenas com o texto ocupando todo o espaço interno, mantendo o gradiente, padding, sombra e demais estilos atuais.
+3. Manter intacto todo o resto do componente: o título, a segunda lista ("Tem gente ganhando dinheiro..."), e o bloco final destacado.
 
 ## Impacto
-Como todos os CTAs da página (`Hero`, `OfferCTA`, `Recap`, etc.) usam o componente `CTAButton`, a mudança em um único arquivo aplica em toda a página.
+Mudança apenas visual em uma seção. Nenhuma lógica ou outro componente afetado.

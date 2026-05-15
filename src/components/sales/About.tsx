@@ -9,21 +9,8 @@ export function About() {
           Seu Agente de IA do Zero – Simplifica-AI
         </h2>
 
-        <div className="mt-6 space-y-4 text-lg leading-relaxed text-foreground/85">
-          <p>Já criei inúmeros agentes de IA para diversas finalidades.</p>
-          <p>
-            Sei exatamente onde as pessoas travam — e como eliminar cada um desses obstáculos.
-          </p>
-          <p>
-            Essa aula de <span className="font-bold text-accent">37 minutos</span> é o atalho direto que eu tirei de quem já cria, cobra e fatura com agentes de IA.
-          </p>
-          <p className="text-xl font-bold text-primary">
-            Não tem teoria aqui. Tem criação ao vivo.
-          </p>
-        </div>
-
         {/* Bloco de Garantia — texto à esquerda, selo à direita */}
-        <div className="mt-12 flex flex-col-reverse items-center gap-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-border sm:flex-row sm:items-center">
+        <div className="mt-12 flex flex-col-reverse items-center gap-6 bg-background sm:flex-row sm:items-center">
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-primary">
               7 Dias de garantia

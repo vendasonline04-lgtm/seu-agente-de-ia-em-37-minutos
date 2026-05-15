@@ -16,8 +16,8 @@ export function Urgency() {
             "Vai perder dinheiro à toa, por gastar com ferramentas que você conhece pouco",
             "Vai ver muita gente fazendo dinheiro com agentes, enquanto você nunca conseguiu fazer nenhum",
           ].map((s, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="font-bold text-alert">→</span>
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert" aria-hidden="true" />
               <span>{s}</span>
             </li>
           ))}

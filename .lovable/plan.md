@@ -1,12 +1,23 @@
-## Plano
+## Objetivo
 
-A página em si está respondendo, mas o que você está vendo é a tela de placeholder do Lovable dizendo que o projeto precisa ser publicado/atualizado para aparecer naquele link.
+Deixar as letras presentes em `src/assets/menino-feliz.png` legíveis e em alta resolução, sem alterar as figuras (personagem, cenário, cores, composição).
 
-1. Publicar/atualizar a versão atual do projeto pelo botão **Publish/Update**.
-2. Depois da publicação, abrir novamente o link publicado para confirmar que a landing page carrega.
-3. Se ainda aparecer o placeholder, verificar se você está usando o link correto: o link publicado deve ser `https://seu-agente-de-ia-em-37-minutos.lovable.app`, não um preview antigo de commit.
+## Abordagem
 
-## Detalhe técnico
+Usar `imagegen--edit_image` com a imagem atual como referência e um prompt focado apenas em refinar o texto:
 
-- O domínio publicado respondeu com status `200`, então não há sinal de erro de código agora.
-- O preview está redirecionando para autenticação/placeholder, comportamento esperado para preview não publicado ou commit antigo.
+- Manter exatamente a mesma cena, personagem, cores, layout e enquadramento.
+- Apenas re-renderizar o texto existente com bordas nítidas, alta resolução, tipografia limpa e legível.
+- Preservar o mesmo conteúdo textual, posição e estilo (fonte/cor) das letras originais.
+- Salvar o resultado em `src/assets/menino-feliz.png` (substituindo a versão atual).
+
+## Validação
+
+- Após gerar, abrir a imagem e conferir se:
+  1. As figuras permanecem idênticas.
+  2. As letras estão nítidas e legíveis.
+- Se o texto sair diferente do original, regenerar ajustando o prompt para travar o conteúdo textual exato.
+
+## Observação
+
+Caso o usuário queira preservar 100% o arquivo original e apenas sobrepor texto novo via HTML em cima da imagem (alternativa sem IA), me avise — é mais previsível para legibilidade, mas muda a forma como o texto aparece no componente `Solution.tsx`.

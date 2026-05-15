@@ -19,7 +19,7 @@ export function Solution() {
 
         <div className="mt-10 rounded-2xl bg-white/5 p-8 ring-1 ring-white/10 backdrop-blur">
           <p className="text-lg italic text-white/90">
-            Com o foco certo, você pode fazer quantos agentes quiser!
+            ​Imagina só: criar seu agente do zero sozinho, do conforto da sua casa, no seu próprio computador...
           </p>
 
           {/* Imagem menino feliz */}
@@ -32,7 +32,7 @@ export function Solution() {
           </div>
 
           <p className="mt-3 text-xl font-bold text-white">
-            Com o foco certo, você pode fazer quantos agentes quiser!
+            ​Imagina só: criar seu agente do zero sozinho, do conforto da sua casa, no seu próprio computador...
           </p>
         </div>
 

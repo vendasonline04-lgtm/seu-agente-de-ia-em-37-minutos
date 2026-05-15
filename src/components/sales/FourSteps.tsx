@@ -38,7 +38,7 @@ export function FourSteps() {
     <section className="bg-background px-4 py-20 text-foreground">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-center text-3xl font-bold sm:text-4xl">
-          Os 4 passos que você executa junto comigo:
+          Em 4 passos você segue, executa, e termina com o agente funcionando.
         </h2>
 
         <div className="mt-12 space-y-6">
@@ -57,7 +57,7 @@ export function FourSteps() {
         <div className="mt-10 text-center text-lg">
           <p className="font-semibold">Sem enrolação. Sem teoria desnecessária.</p>
           <p className="mt-2 text-foreground/80">
-            <span className="font-bold text-accent">37 minutos</span> do início ao agente funcionando — pronto para usar e pronto para monetizar.
+            <span className="font-bold text-accent">37 minutos</span> do zero ao agente funcionando, pronto pra usar!
           </p>
         </div>
       </div>

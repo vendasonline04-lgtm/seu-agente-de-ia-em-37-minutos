@@ -64,7 +64,7 @@ export function OfferCTA() {
               </div>
               <span className="text-base font-semibold text-foreground/60">OU</span>
               <span className="text-2xl font-bold text-foreground/70">
-                ou R$ 67,00 à vista
+                R$ 67,00 à vista
               </span>
             </div>
 

@@ -10,12 +10,13 @@ import { ForWho } from "@/components/sales/ForWho";
 import { ValueStack } from "@/components/sales/ValueStack";
 import { OfferCTA } from "@/components/sales/OfferCTA";
 import { Urgency } from "@/components/sales/Urgency";
-
+import { Guarantee } from "@/components/sales/Guarantee";
 import { Recap } from "@/components/sales/Recap";
 import { FAQ } from "@/components/sales/FAQ";
 import { Footer } from "@/components/sales/Footer";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute("/")(
+  {
   head: () => ({
     meta: [
       { title: "Seu Agente de IA do Zero — Crie seu primeiro agente em 37 minutos" },
@@ -59,7 +60,7 @@ function SalesPage() {
       <ValueStack />
       <OfferCTA />
       <Urgency />
-      
+      <Guarantee />
       <Recap />
       <FAQ />
       <Footer />

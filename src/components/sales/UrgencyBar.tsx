@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { Clock } from "lucide-react";
 
 export function UrgencyBar() {
-  const [time, setTime] = useState({ h: 0, m: 14, s: 59 });
+  const [time, setTime] = useState({ h: 0, m: 30, s: 0 });
 
   useEffect(() => {
     const t = setInterval(() => {
       setTime((prev) => {
         let { h, m, s } = prev;
+        if (h === 0 && m === 0 && s === 0) return prev;
         s -= 1;
         if (s < 0) { s = 59; m -= 1; }
         if (m < 0) { m = 59; h -= 1; }

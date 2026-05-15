@@ -15,10 +15,10 @@ export function ForWho() {
         </h2>
         <ul className="mt-8 space-y-4 text-lg">
           {items.map((it, i) => (
-            <li key={i} className="flex gap-3 rounded-lg border-l-4 border-accent bg-muted/60 p-4">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent">
-                <svg viewBox="0 0 10 10" className="h-3 w-3 fill-white" aria-hidden="true">
-                  <path d="M3 5l2 2 4-4" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+            <li key={i} className="flex gap-3 rounded-lg border-l-4 border-alert bg-muted/60 p-4">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-alert">
+                <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
+                  <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
               <span>{it}</span>

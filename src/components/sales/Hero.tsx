@@ -12,6 +12,7 @@ export function Hero() {
       }} />
       <div className="relative mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">
+
           {/* Coluna esquerda — texto */}
           <div className="flex-1 text-left">
             <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white">
@@ -20,19 +21,30 @@ export function Hero() {
             <p className="mt-6 max-w-xl text-lg text-white/80 sm:text-xl">
               Seu Agente de IA do Zero é a aula prática onde você foca e finalmente coloca seu agente no ar, mesmo sem saber nada de programação.
             </p>
+
+            {/* Imagem — aparece aqui só no mobile, some no desktop */}
+            <div className="mt-8 flex items-center justify-center md:hidden">
+              <img
+                src={heroProduto}
+                alt="Seu Agente de IA do Zero — imagem do produto"
+                className="w-full max-w-lg rounded-2xl shadow-2xl"
+              />
+            </div>
+
             <div className="mt-10">
               <CTAButton variant="orange">Quero meu agente de ia agora</CTAButton>
             </div>
           </div>
 
-          {/* Coluna direita — imagem do produto */}
-          <div className="flex-1 flex items-center justify-center">
+          {/* Coluna direita — imagem só no desktop */}
+          <div className="hidden md:flex flex-1 items-center justify-center">
             <img
               src={heroProduto}
               alt="Seu Agente de IA do Zero — imagem do produto"
               className="w-full max-w-lg rounded-2xl shadow-2xl"
             />
           </div>
+
         </div>
       </div>
     </section>

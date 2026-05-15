@@ -27,7 +27,7 @@ export function Hero() {
           {/* Coluna esquerda — texto */}
           <div className="flex-1 text-left">
             <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white">
-              Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu <span className="text-alert">Agente de IA do Zero</span> em 37 minutos!
+              Pare de se perder tentando entender agentes de IA por conta própria, e saia daqui com seu <span className="text-alert">Agente de IA do Zero</span> em <span className="text-alert">37 minutos</span>!
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/80 sm:text-xl">
               Seu Agente de IA do Zero é a aula prática onde você foca e finalmente coloca seu agente no ar, mesmo sem saber nada de programação.

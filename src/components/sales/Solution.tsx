@@ -32,7 +32,7 @@ export function Solution() {
           </div>
 
           <p className="mt-3 text-xl font-bold text-white">
-            "esse aqui eu fiz, e posso fazer para você também."
+            Com o foco certo, você pode fazer quantos agentes quiser!
           </p>
         </div>
 

@@ -1,23 +1,19 @@
 ## Objetivo
-Deixar a imagem do "ciclo bugado" (em `ProblemCycle.tsx`) em alta resolução, com as letras nítidas — sem embaçar.
-
-## Abordagem
-A imagem original enviada pelo usuário tem resolução baixa, então qualquer ampliação no CSS deixa as letras borradas. Vou recriar a imagem em alta resolução usando IA de edição de imagem (`imagegen--edit_image`), preservando exatamente o mesmo layout, personagem, balões roxos e textos.
+Inserir a seta (imagem enviada) na cor laranja da paleta entre o Passo 1 → Passo 2 e entre o Passo 3 → Passo 4 na seção `FourSteps`.
 
 ## Passos
 
-1. Usar `imagegen--edit_image` com a imagem atual (`src/assets/ciclo-bugado.png`) como referência, gerando uma versão em alta resolução com texto nítido. Salvar em `src/assets/ciclo-bugado.png` (sobrescreve).
-   - Prompt: recriar a mesma cena (jovem com mãos na cabeça, frustrado, em frente ao notebook, fundo gradiente roxo/laranja) com os mesmos 6 balões roxos contendo exatamente os mesmos textos em português:
-     - "Mais um vídeo sem entender nada..."
-     - "Tanta informação que eu me perco"
-     - "Não sei por onde começar"
-     - "Minha cabeça bugou de novo"
-     - "Todo mundo consegue, menos eu"
-     - "Toda hora eu travo e não consigo terminar"
-   - Aspect ratio: `1:1` (mesma proporção da original).
-   - Texto deve ficar perfeitamente legível e nítido (alta resolução).
+1. Copiar `user-uploads://Mais_um_vídeo_sem_entender_nada..._1.png` para `src/assets/seta-laranja.png`.
+2. Recolorir a seta (atualmente preta) para o laranja da marca usando `imagegen--edit_image`. A cor será o `--accent` do design system (o mesmo laranja já usado em `text-accent` na página). Fundo permanece transparente/branco. Salvar sobrescrevendo `src/assets/seta-laranja.png`.
+3. Editar `src/components/sales/FourSteps.tsx`:
+   - Importar a imagem.
+   - Renderizar a seta entre os cards 1→2 e 3→4. Como o grid é `md:grid-cols-2`, a seta entre 1 e 2 fica entre o 1º e 2º card (na mesma linha no desktop, entre eles no mobile). Entre 3 e 4 mesma lógica.
+   - Abordagem mais simples: trocar o `.map()` por render manual dos 4 passos, intercalando uma `<img>` decorativa nas duas posições. No desktop, a seta aparece sobreposta entre os cards (pequena, ~64px); no mobile aparece centralizada apontando para baixo (com `rotate-90`).
 
-2. Não é preciso editar `ProblemCycle.tsx` — o import já aponta para `@/assets/ciclo-bugado.png` e o arquivo será atualizado no mesmo caminho.
+## Detalhes técnicos
+- A seta original aponta para a direita-baixo. No desktop fica natural entre cards lado-a-lado; no mobile rotacionar para apontar pra baixo.
+- Tamanho ~56–72px, sem afetar o layout do grid (usar coluna inteira `md:col-span-2` com `-my-2` ou simplesmente um item flex centralizado entre os pares).
+- Estrutura proposta no grid: card1, seta, card2, card3, seta, card4 — mas isso quebra `grid-cols-2`. Solução: trocar para uma estrutura de "linhas" com flex, cada linha contendo `[card][seta][card]`, empilhando em mobile.
 
 ## Risco
-Modelos de geração de imagem ocasionalmente erram ortografia em português. Caso algum texto saia errado após a geração, faço uma segunda passada de edição corrigindo apenas os balões com erro.
+A recoloração via IA pode alterar levemente a forma. Se ocorrer, refazer com prompt mais restritivo ou aplicar filtro CSS (`filter: hue-rotate`) como fallback.

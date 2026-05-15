@@ -23,15 +23,14 @@ function Countdown() {
   const pad = (n: number) => n.toString().padStart(2, "0");
 
   return (
-    <div className="mb-6 flex flex-col items-center gap-2">
-      <p className="text-sm font-bold uppercase tracking-widest text-foreground/70">
-        Oferta válida só hoje
-      </p>
-      <div
-        className="font-mono text-5xl font-bold tabular-nums tracking-wider"
-        style={{ color: "var(--color-alert, #f97316)" }}
-      >
-        {pad(time.h)}:{pad(time.m)}:{pad(time.s)}
+    <div className="mb-6 flex flex-col items-center gap-3">
+      <div className="rounded-2xl bg-alert px-8 py-4 text-center">
+        <p className="text-sm font-bold uppercase tracking-widest text-white">
+          Oferta válida só hoje
+        </p>
+        <div className="font-mono text-5xl font-bold tabular-nums tracking-wider text-white">
+          {pad(time.h)}:{pad(time.m)}:{pad(time.s)}
+        </div>
       </div>
     </div>
   );
@@ -75,21 +74,18 @@ export function OfferCTA() {
 
             {/* Ícones de pagamento */}
             <div className="mt-5 flex items-center justify-center gap-3">
-              {/* PIX */}
               <span className="flex items-center gap-1 rounded-md border border-border bg-muted px-3 py-1.5 text-xs font-bold uppercase tracking-wide">
                 <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current text-accent" aria-label="Pix">
                   <path d="M12 2L6.5 7.5 2 12l4.5 4.5L12 22l5.5-5.5L22 12l-4.5-4.5L12 2zm0 3.5l3.5 3.5-3.5 3.5L8.5 9 12 5.5zm-6.5 6.5L9 8.5 12 11.5 9 14.5 5.5 11zm6.5 6.5L8.5 13l3.5-3.5 3.5 3.5L12 18.5zM14.5 9l3.5 3.5-3.5 3.5L11 12.5l3.5-3.5z"/>
                 </svg>
                 PIX
               </span>
-              {/* Visa */}
               <span className="flex items-center gap-1 rounded-md border border-border bg-muted px-3 py-1.5 text-xs font-bold uppercase tracking-wide">
                 <svg viewBox="0 0 38 24" className="h-4 w-6" aria-label="Visa">
                   <rect width="38" height="24" rx="3" fill="#1A1F71"/>
                   <text x="6" y="17" fill="white" fontSize="12" fontWeight="bold" fontFamily="Arial">VISA</text>
                 </svg>
               </span>
-              {/* Mastercard */}
               <span className="flex items-center gap-1 rounded-md border border-border bg-muted px-3 py-1.5 text-xs font-bold uppercase tracking-wide">
                 <svg viewBox="0 0 38 24" className="h-4 w-6" aria-label="Mastercard">
                   <rect width="38" height="24" rx="3" fill="#252525"/>

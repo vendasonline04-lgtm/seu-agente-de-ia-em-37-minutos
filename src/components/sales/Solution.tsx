@@ -18,7 +18,7 @@ export function Solution() {
         </div>
 
         <div className="mt-10 rounded-2xl bg-white/5 p-8 ring-1 ring-white/10 backdrop-blur">
-          <p className="text-lg italic text-white/90">
+          <p className="text-lg italic text-white/90 font-bold">
             ​Imagina só: criar seu agente do zero sozinho, do conforto da sua casa, no seu próprio computador...
           </p>
 

@@ -14,11 +14,11 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl">
 
         {/* Logo no topo */}
-        <div className="mb-10 flex justify-center">
+        <div className="mb-6 flex justify-center">
           <img
             src={logo}
             alt="Agente de IA do Zero — Simplifica-AI"
-            className="h-20 w-auto object-contain"
+            className="h-36 w-auto object-contain sm:h-44"
           />
         </div>
 

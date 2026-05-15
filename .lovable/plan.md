@@ -1,9 +1,19 @@
-Diagnóstico: a página publicada está carregando corretamente. Testei a URL publicada e todos os recursos principais retornaram 200; também abri no navegador e a página de vendas apareceu. A tela do print com “Publish or update your Lovable project...” é de um link de preview/histórico antigo, não da página publicada atual.
+Plano para resolver o carregamento da página:
 
-Plano de ação imediato:
-1. Manter o código da página como está, porque a rota pública está saudável e carregando.
-2. Orientar o uso da URL correta publicada: `https://seu-agente-de-ia-em-37-minutos.lovable.app`.
-3. Se você estiver vendo a tela escura no painel, sair da visualização de commit antigo/histórico e abrir a preview atual do projeto ou clicar em Publish/Update.
-4. Se ainda quiser uma mudança técnica, após aprovação posso adicionar uma tela de erro/fallback mais clara para falhas reais, mas isso não corrige esse print porque ele vem da camada de preview/publicação, não do app.
+1. Confirmar o estado real da prévia atual
+- A prévia atual do app foi testada e carregou normalmente.
+- Não apareceram erros críticos no console nem requisições 500.
+- Os logs do servidor também mostram o Vite rodando normalmente.
 
-Resultado esperado: a página continua carregando imediatamente na URL publicada, sem alteração visual no funil.
+2. Corrigir a causa mais provável do print enviado
+- O print mostra a mensagem “Publish or update your Lovable project for it to appear here”, que não vem do código da página.
+- Isso normalmente acontece quando você está vendo um preview histórico/commit antigo ou uma URL que ainda não foi atualizada/publicada.
+- A ação correta é abrir a prévia atual do projeto ou clicar em Publish/Update para atualizar a URL publicada.
+
+3. Ajuste técnico opcional, se você aprovar
+- Adicionar um favicon simples para remover a única requisição com erro visível (`/favicon.ico`).
+- Manter o fallback de erro existente, porque ele já está configurado para páginas que realmente falham.
+
+Resultado esperado:
+- A página continua carregando na prévia atual e na URL publicada correta.
+- Se o problema estiver no link antigo, ele será resolvido usando a prévia atual ou atualizando a publicação, sem mexer no funil visual.

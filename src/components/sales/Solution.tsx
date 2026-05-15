@@ -1,3 +1,6 @@
+import meninoFeliz from "@/assets/menino-feliz.png";
+import cicloBugado from "@/assets/ciclo-bugado.png";
+
 export function Solution() {
   return (
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
@@ -19,6 +22,16 @@ export function Solution() {
           <p className="text-lg italic text-white/90">
             Imagina você abrindo o computador, mostrando seu agente funcionando para alguém e dizendo:
           </p>
+
+          {/* Imagem menino feliz */}
+          <div className="my-6 flex justify-center">
+            <img
+              src={meninoFeliz}
+              alt="Pessoa feliz com seu agente de IA funcionando"
+              className="w-full max-w-sm rounded-2xl"
+            />
+          </div>
+
           <p className="mt-3 text-xl font-bold text-white">
             "esse aqui eu fiz, e posso fazer para você também."
           </p>

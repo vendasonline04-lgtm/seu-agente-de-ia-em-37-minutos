@@ -7,10 +7,10 @@ export function Guarantee() {
         <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-center">
           {/* Texto à esquerda */}
           <div className="flex-1">
-            <h3 className="mt-3 leading-relaxed text-foreground/80 text-xl">
+            <h2 className="text-balance text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
               7 Dias de Garantia
-            </h3>
-            <p className="mt-3 text-base leading-relaxed text-foreground/80">
+            </h2>
+            <p className="mt-6 text-lg text-foreground/80">
               Se em 7 dias você não gostar do conteúdo, ou por algum motivo achar que isso não é pra você, pode solicitar seu dinheiro de volta sem problema algum.
             </p>
           </div>

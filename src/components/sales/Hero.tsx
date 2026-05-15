@@ -1,5 +1,6 @@
 import { CTAButton } from "./CTAButton";
 import heroProduto from "@/assets/hero-produto.png";
+import logo from "@/assets/logo.png";
 
 export function Hero() {
   return (
@@ -11,6 +12,16 @@ export function Hero() {
         backgroundImage: "radial-gradient(circle at 20% 20%, rgba(109,28,195,0.6), transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,122,0,0.25), transparent 50%)"
       }} />
       <div className="relative mx-auto max-w-6xl">
+
+        {/* Logo no topo */}
+        <div className="mb-10 flex justify-center">
+          <img
+            src={logo}
+            alt="Agente de IA do Zero — Simplifica-AI"
+            className="h-20 w-auto object-contain"
+          />
+        </div>
+
         <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">
 
           {/* Coluna esquerda — texto */}
@@ -32,7 +43,7 @@ export function Hero() {
             </div>
 
             <div className="mt-10">
-              <CTAButton variant="orange">Quero meu agente de ia do zero agora</CTAButton>
+              <CTAButton variant="orange">Quero meu agente de ia agora</CTAButton>
             </div>
           </div>
 

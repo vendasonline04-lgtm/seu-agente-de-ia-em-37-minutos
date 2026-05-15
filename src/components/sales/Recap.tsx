@@ -1,4 +1,4 @@
-import { Check, Zap, ShieldCheck } from "lucide-react";
+import { Zap, ShieldCheck } from "lucide-react";
 import { CTAButton } from "./CTAButton";
 
 const items = [
@@ -20,7 +20,11 @@ export function Recap() {
         <ul className="mx-auto mt-10 max-w-xl space-y-3 text-left">
           {items.map((it, i) => (
             <li key={i} className="flex items-start gap-3 rounded-lg bg-white/5 p-4 ring-1 ring-white/10">
-              <Check className="mt-0.5 h-5 w-5 shrink-0 text-alert" strokeWidth={3} />
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-alert">
+                <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
+                  <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
               <span className="text-lg">{it}</span>
             </li>
           ))}

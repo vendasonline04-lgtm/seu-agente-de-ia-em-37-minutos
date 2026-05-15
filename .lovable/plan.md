@@ -1,10 +1,8 @@
 ## Objetivo
-No rodapé (`src/components/sales/Footer.tsx`), exibir o e-mail de suporte como texto simples, sem link clicável.
+Remover a seção "Quem vai criar junto com você / Seu Agente de IA do Zero – Simplifica-AI" da página inicial.
 
-## Mudança
-Substituir a tag `<a href="mailto:...">contato@simplifica-ai.com</a>` por apenas o texto `contato@simplifica-ai.com`, mantendo o prefixo "Suporte: ".
+## Mudanças
+1. Em `src/routes/index.tsx`: remover o import de `About` e a tag `<About />` do JSX.
+2. Excluir o arquivo `src/components/sales/About.tsx`.
 
-## Arquivo afetado
-- `src/components/sales/Footer.tsx` (linhas 7-10)
-
-Nada mais é alterado.
+Nenhuma outra seção é alterada.

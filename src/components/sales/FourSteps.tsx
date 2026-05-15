@@ -28,7 +28,7 @@ function Arrow() {
       src={setaLaranja}
       alt=""
       aria-hidden="true"
-      className="h-14 w-14 shrink-0 rotate-90 self-center md:h-16 md:w-16 md:rotate-0"
+      className="h-14 w-14 shrink-0 rotate-90 self-center md:h-28 md:w-28 md:rotate-0"
     />
   );
 }

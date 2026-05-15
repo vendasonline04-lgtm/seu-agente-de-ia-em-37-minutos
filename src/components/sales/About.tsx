@@ -22,21 +22,26 @@ export function About() {
           </p>
         </div>
 
-        {/* Bloco de Garantia */}
-        <div className="mt-12 flex flex-col items-start gap-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-border sm:flex-row sm:items-center">
-          {/* Selo de garantia */}
-          <div className="flex h-24 w-24 shrink-0 flex-col items-center justify-center rounded-full border-4 border-accent bg-background text-center">
-            <span className="text-xs font-bold uppercase tracking-tight text-foreground/70">Garantia</span>
-            <span className="text-3xl font-bold leading-none text-accent">7</span>
-            <span className="text-xs font-bold uppercase tracking-tight text-foreground/70">dias</span>
-          </div>
-          <div>
-            <h3 className="font-bold text-primary text-4xl">
+        {/* Bloco de Garantia — texto à esquerda, selo à direita */}
+        <div className="mt-12 flex flex-col-reverse items-center gap-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-border sm:flex-row sm:items-center">
+          <div className="flex-1">
+            <h3 className="text-2xl font-bold text-primary">
               7 Dias de garantia
             </h3>
             <p className="mt-2 text-base text-foreground/80">
               Se em 7 dias você não gostar do conteúdo, ou por algum motivo achar que isso não é pra você, pode solicitar seu dinheiro de volta sem problema algum.
             </p>
+          </div>
+          {/* Selo de garantia */}
+          <div className="flex shrink-0 flex-col items-center justify-center">
+            <div
+              className="flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 text-center"
+              style={{ borderColor: "var(--color-accent, #6d1cc3)", background: "var(--color-accent, #6d1cc3)" }}
+            >
+              <span className="text-xs font-bold uppercase tracking-tight text-white">Garantia</span>
+              <span className="text-4xl font-bold leading-none text-white">7</span>
+              <span className="text-xs font-bold uppercase tracking-tight text-white">dias</span>
+            </div>
           </div>
         </div>
       </div>

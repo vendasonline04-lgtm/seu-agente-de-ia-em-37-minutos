@@ -17,7 +17,11 @@ export function Urgency() {
             "Vai ver muita gente fazendo dinheiro com agentes, enquanto você nunca conseguiu fazer nenhum",
           ].map((s, i) => (
             <li key={i} className="flex items-start gap-3">
-              <span className="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert" aria-hidden="true" />
+              <span className="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert">
+                <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
+                  <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
               <span>{s}</span>
             </li>
           ))}

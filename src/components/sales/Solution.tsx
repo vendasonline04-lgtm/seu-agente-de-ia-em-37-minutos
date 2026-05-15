@@ -1,5 +1,4 @@
 import meninoFeliz from "@/assets/menino-feliz.png";
-import cicloBugado from "@/assets/ciclo-bugado.png";
 
 export function Solution() {
   return (

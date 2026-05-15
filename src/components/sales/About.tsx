@@ -1,3 +1,5 @@
+import seloGarantia from "@/assets/selo-garantia.png";
+
 export function About() {
   return (
     <section className="bg-background px-4 py-20 text-foreground">
@@ -9,7 +11,7 @@ export function About() {
           Seu Agente de IA do Zero – Simplifica-AI
         </h2>
 
-        {/* Bloco de Garantia — texto à esquerda, selo à direita */}
+        {/* Bloco de Garantia — texto à esquerda, imagem à direita */}
         <div className="mt-12 flex flex-col-reverse items-center gap-6 bg-background sm:flex-row sm:items-center">
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-primary">
@@ -19,16 +21,13 @@ export function About() {
               Se em 7 dias você não gostar do conteúdo, ou por algum motivo achar que isso não é pra você, pode solicitar seu dinheiro de volta sem problema algum.
             </p>
           </div>
-          {/* Selo de garantia */}
-          <div className="flex shrink-0 flex-col items-center justify-center">
-            <div
-              className="flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 text-center"
-              style={{ borderColor: "var(--color-accent, #6d1cc3)", background: "var(--color-accent, #6d1cc3)" }}
-            >
-              <span className="text-xs font-bold uppercase tracking-tight text-white">Garantia</span>
-              <span className="text-4xl font-bold leading-none text-white">7</span>
-              <span className="text-xs font-bold uppercase tracking-tight text-white">dias</span>
-            </div>
+          {/* Imagem do selo de garantia */}
+          <div className="flex shrink-0 items-center justify-center">
+            <img
+              src={seloGarantia}
+              alt="Selo de garantia de 7 dias"
+              className="h-28 w-28 object-contain"
+            />
           </div>
         </div>
       </div>

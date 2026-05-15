@@ -19,7 +19,7 @@ export function Guarantee() {
             <img
               src={seloGarantia}
               alt="Selo de garantia de 7 dias"
-              className="h-32 w-32 object-contain"
+              className="h-56 w-56 object-contain sm:h-72 sm:w-72"
             />
           </div>
         </div>

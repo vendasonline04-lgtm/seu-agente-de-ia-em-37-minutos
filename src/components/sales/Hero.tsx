@@ -32,7 +32,7 @@ export function Hero() {
             </div>
 
             <div className="mt-10">
-              <CTAButton variant="orange">Quero meu agente de ia agora</CTAButton>
+              <CTAButton variant="orange">Quero meu agente de ia do zero agora</CTAButton>
             </div>
           </div>
 

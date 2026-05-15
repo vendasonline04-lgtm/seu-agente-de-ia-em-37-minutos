@@ -25,7 +25,7 @@ export function UrgencyBar() {
     <div className="sticky top-0 z-50 w-full bg-alert text-alert-foreground">
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-3 px-4 py-2 text-sm font-semibold">
         <Clock className="h-4 w-4" />
-        <span className="hidden sm:inline">Oferta por tempo limitado — encerra em</span>
+        <span className="hidden sm:inline">Oferta por tempo limitado! Encerra em</span>
         <span className="sm:hidden">Encerra em</span>
         <span className="font-mono tabular-nums tracking-wider">
           {pad(time.h)}:{pad(time.m)}:{pad(time.s)}

@@ -31,7 +31,7 @@ export function About() {
             <span className="text-xs font-bold uppercase tracking-tight text-foreground/70">dias</span>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-primary">
+            <h3 className="font-bold text-primary text-4xl">
               7 Dias de garantia
             </h3>
             <p className="mt-2 text-base text-foreground/80">

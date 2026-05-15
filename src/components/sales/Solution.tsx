@@ -19,7 +19,7 @@ export function Solution() {
 
         <div className="mt-10 rounded-2xl bg-white/5 p-8 ring-1 ring-white/10 backdrop-blur">
           <p className="text-lg italic text-white/90">
-            Imagina você abrindo o computador, mostrando seu agente funcionando para alguém e dizendo:
+            Com o foco certo, você pode fazer quantos agentes quiser!
           </p>
 
           {/* Imagem menino feliz */}

@@ -7,7 +7,7 @@ export function Guarantee() {
         <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-center">
           {/* Texto à esquerda */}
           <div className="flex-1">
-            <h3 className="text-2xl font-bold text-primary">
+            <h3 className="mt-3 leading-relaxed text-foreground/80 text-xl">
               7 Dias de Garantia
             </h3>
             <p className="mt-3 text-base leading-relaxed text-foreground/80">

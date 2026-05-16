@@ -28,6 +28,8 @@ export function ProblemCycle() {
             "Tem gente ganhando dinheiro criando agentes para clientes",
             "Tem gente automatizando processos e cobrando por isso",
             "Tem gente que saiu do zero e já tem portfólio",
+            "Tem gente ganhando tempo com agente, sem fazer trabalho repetitivo",
+            "Tem gente economizando dinheiro com IA, pois conhece o fluxo certo",
           ].map((s, i) => (
             <li key={i} className="flex items-start gap-3">
               <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert">

@@ -1,23 +1,35 @@
 ## Objetivo
 
-Deixar as letras presentes em `src/assets/menino-feliz.png` legíveis e em alta resolução, sem alterar as figuras (personagem, cenário, cores, composição).
+1. Melhorar a nitidez das letras dentro de `src/assets/menino-feliz.png` sem alterar nenhum elemento da imagem (personagem, balões, cores, composição).
+2. Aumentar o tamanho exibido da imagem no componente `Solution.tsx` para ficar visualmente parecido com o tamanho da imagem de referência enviada (imagem maior, ocupando mais largura na seção).
 
-## Abordagem
+## Passos
 
-Usar `imagegen--edit_image` com a imagem atual como referência e um prompt focado apenas em refinar o texto:
+### 1. Re-renderizar a imagem com letras nítidas
+- Usar `imagegen--edit_image` em `src/assets/menino-feliz.png` com prompt focado apenas em:
+  - Manter exatamente a mesma cena, personagem, balões, cores e layout.
+  - Re-renderizar APENAS o texto dos balões com tipografia nítida, bordas limpas e alta resolução.
+  - Preservar o conteúdo textual exato de cada balão:
+    - "Mais um vídeo sem entender nada..."
+    - "Tanta informação que eu me perco"
+    - "Não sei por onde começar"
+    - "Minha cabeça bugou de novo"
+    - "Todo mundo consegue, menos eu"
+    - "Toda hora eu travo e não consigo terminar"
+- Aspect ratio: manter o atual (a imagem é praticamente quadrada → `1:1`).
+- Salvar sobrescrevendo `src/assets/menino-feliz.png`.
 
-- Manter exatamente a mesma cena, personagem, cores, layout e enquadramento.
-- Apenas re-renderizar o texto existente com bordas nítidas, alta resolução, tipografia limpa e legível.
-- Preservar o mesmo conteúdo textual, posição e estilo (fonte/cor) das letras originais.
-- Salvar o resultado em `src/assets/menino-feliz.png` (substituindo a versão atual).
+### 2. Validar
+- Abrir a imagem gerada e conferir:
+  - Figuras idênticas às originais.
+  - Texto dos balões legível e nítido.
+- Se algum texto sair diferente, regerar travando o conteúdo no prompt.
 
-## Validação
+### 3. Aumentar o tamanho exibido em `Solution.tsx`
+- Hoje a imagem usa `max-w-sm` (~384px).
+- Trocar para `max-w-xl` ou `max-w-2xl` para que ela ocupe largura próxima à da imagem de referência (mantendo `w-full` e `rounded-2xl`).
+- Nenhuma outra alteração de layout, copy ou estilo da seção.
 
-- Após gerar, abrir a imagem e conferir se:
-  1. As figuras permanecem idênticas.
-  2. As letras estão nítidas e legíveis.
-- Se o texto sair diferente do original, regenerar ajustando o prompt para travar o conteúdo textual exato.
-
-## Observação
-
-Caso o usuário queira preservar 100% o arquivo original e apenas sobrepor texto novo via HTML em cima da imagem (alternativa sem IA), me avise — é mais previsível para legibilidade, mas muda a forma como o texto aparece no componente `Solution.tsx`.
+## Fora de escopo
+- Não mudar texto, cores ou layout da seção.
+- Não tocar em outras imagens ou componentes.

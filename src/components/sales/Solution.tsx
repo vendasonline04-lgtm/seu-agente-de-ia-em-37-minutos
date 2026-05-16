@@ -27,7 +27,7 @@ export function Solution() {
             <img
               src={meninoFeliz}
               alt="Pessoa feliz com seu agente de IA funcionando"
-              className="w-full max-w-sm rounded-2xl"
+              className="w-full max-w-2xl rounded-2xl"
             />
           </div>
 

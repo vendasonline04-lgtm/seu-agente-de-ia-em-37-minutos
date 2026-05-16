@@ -15,6 +15,8 @@ export function Urgency() {
             "Vai ver o mercado de agentes continuar a crescer, sem você dentro",
             "Vai perder dinheiro à toa, por gastar com ferramentas que você conhece pouco",
             "Vai ver muita gente fazendo dinheiro com agentes, enquanto você nunca conseguiu fazer nenhum",
+            "Vai continuar fazendo tarefas repetitivas sendo que você podia focar no que realmente importa",
+            "Vai continuar perdendo tempo com assuntos que um agente poderia fazer no seu lugar",
           ].map((s, i) => (
             <li key={i} className="flex items-start gap-3">
               <span className="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-alert">

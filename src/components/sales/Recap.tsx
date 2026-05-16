@@ -36,8 +36,8 @@ export function Recap() {
 
         {/* Preço com parcelamento em destaque */}
         <div className="mt-3 flex flex-col items-center gap-1">
-          <div className="flex items-baseline gap-1">
-            <span className="text-sm font-semibold text-white/60">10x de</span>
+          <div className="relative flex items-baseline gap-1">
+            <span className="absolute left-0 right-0 -top-5 text-center text-sm font-semibold text-white/60">10x de</span>
             <span className="font-display text-5xl font-bold leading-none text-alert">
               R$ 8,12
             </span>

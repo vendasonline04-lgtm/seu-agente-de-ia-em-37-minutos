@@ -43,7 +43,7 @@ export function Recap() {
             </span>
           </div>
           <span className="text-base font-semibold text-white/60">OU</span>
-          <span className="text-xl font-bold text-white/80">ou R$ 67,00 à vista</span>
+          <span className="text-xl font-bold text-white/80">R$ 67,00 à vista</span>
         </div>
 
         <div className="mt-8">

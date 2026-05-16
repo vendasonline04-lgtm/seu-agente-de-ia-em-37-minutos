@@ -1,5 +1,5 @@
 const items = [
-  "você fica perdido com tanta informação e não sai do lugar",
+  "Você fica perdido com tanta informação e não sai do lugar",
   "Tenta entender por conta própria e sempre trava no mesmo ponto",
   "Vê outras pessoas ganhando dinheiro com agentes enquanto você ainda está no conteúdo",
   "Quer criar algo real, mas quando vai ver já não sabe mais que ordem seguir",

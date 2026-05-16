@@ -4,6 +4,8 @@ const items = [
   "Vê outras pessoas ganhando dinheiro com agentes enquanto você ainda está no conteúdo",
   "Quer criar algo real, mas quando vai ver já não sabe mais que ordem seguir",
   "está cansado de consumir um monte de conteúdo e fica só perdendo o foco",
+  "Perde tempo e dinheiro à toda por não saber usar IA",
+  "Faz tarefas repetitivas e precisa ganhar tempo, para focar no que realmente importa",
 ];
 
 export function ForWho() {

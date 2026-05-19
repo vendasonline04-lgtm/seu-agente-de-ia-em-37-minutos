@@ -47,7 +47,7 @@ export function Hero() {
             </div>
 
             <div className="mt-10">
-              <CTAButton variant="orange">Quero meu agente de ia agora</CTAButton>
+              <CTAButton variant="orange" className="text-lg text-center">Quero meu agente de ia agora</CTAButton>
             </div>
           </div>
 

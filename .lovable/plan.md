@@ -1,23 +1,15 @@
 ## Objetivo
-Deixar a imagem da logo sem a frase "Agente de IA do Zero" embutida, mantendo apenas a frase ao lado direito — com "Agente de IA" na primeira linha e "do Zero" na segunda.
+Reduzir o tamanho da imagem da logo (robô) e manter a frase "Agente de IA / do Zero" ao lado direito, conforme a referência enviada.
 
 ## Alterações
 
-### 1. Substituir a imagem da logo
-- Gerar uma nova versão da logo **somente com o símbolo/ícone** (sem o texto "Agente de IA do Zero" embutido na arte).
-- Salvar como novo asset (ex.: `src/assets/logo-icon.png`, fundo transparente).
-- Atualizar o import em `src/components/sales/Hero.tsx` para usar o novo arquivo.
-
-### 2. Ajustar o texto ao lado da logo (`src/components/sales/Hero.tsx`)
-- Manter o container flex horizontal (logo + texto).
-- Trocar o `<span>` atual por uma estrutura em duas linhas:
-  - Linha 1: **Agente de IA**
-  - Linha 2: **do Zero**
-- Manter tipografia atual (bold, branco, `text-2xl sm:text-3xl md:text-4xl`, leading apertado).
-- Alinhamento vertical centralizado em relação à logo.
+### `src/components/sales/Hero.tsx`
+- Reduzir a altura da imagem da logo de `h-36 sm:h-44` para algo mais compacto: `h-20 sm:h-24` (proporção parecida com a referência).
+- Manter o container `flex items-center justify-center gap-4` (logo + texto lado a lado, centralizados verticalmente).
+- Manter o texto em duas linhas:
+  - "Agente de IA"
+  - "do Zero"
+- Manter a tipografia atual (bold, branco, `text-2xl sm:text-3xl md:text-4xl`).
 
 ## Fora do escopo
-- Nenhuma outra seção, cor, copy ou layout do site será alterada.
-
-## Observação
-A frase "Agente de IA do Zero" está embutida no arquivo de imagem da logo atual, por isso é necessário gerar uma nova versão só com o ícone. Se você preferir, pode me enviar um arquivo de logo sem texto e eu apenas troco o asset, sem gerar uma nova imagem.
+- Nenhuma alteração em outras seções, cores, copy ou layout do site.

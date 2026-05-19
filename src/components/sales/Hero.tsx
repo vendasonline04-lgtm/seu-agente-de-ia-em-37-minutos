@@ -1,6 +1,6 @@
 import { CTAButton } from "./CTAButton";
 import heroProduto from "@/assets/Meninas Conversando.png";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-icon.png";
 
 export function Hero() {
   return (
@@ -20,9 +20,10 @@ export function Hero() {
             alt="Agente de IA do Zero — Simplifica-AI"
             className="h-36 w-auto object-contain sm:h-44"
           />
-          <span className="text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl text-center whitespace-pre-line">
-            {"Agente de IA \ndo Zero"}
-          </span>
+          <div className="flex flex-col text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
+            <span>Agente de IA</span>
+            <span>do Zero</span>
+          </div>
         </div>
 
         <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">

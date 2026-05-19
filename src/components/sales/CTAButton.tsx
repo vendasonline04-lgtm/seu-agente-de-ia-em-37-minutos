@@ -8,7 +8,7 @@ interface CTAButtonProps {
 export function CTAButton({
   href = "#oferta",
   children,
-  className = "",
+  className = "text-lg text-center",
   variant = "default",
 }: CTAButtonProps) {
   const styles = {

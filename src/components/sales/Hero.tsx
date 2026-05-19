@@ -20,8 +20,8 @@ export function Hero() {
             alt="Agente de IA do Zero — Simplifica-AI"
             className="h-36 w-auto object-contain sm:h-44"
           />
-          <span className="text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
-            Agente de IA do Zero
+          <span className="text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl text-center whitespace-pre-line">
+            {"Agente de IA \ndo Zero"}
           </span>
         </div>
 

@@ -51,7 +51,7 @@ export function Hero() {
           <div className="hidden md:flex flex-1 items-center justify-center">
             <img
               src={heroProduto}
-              alt="Seu Agente de IA do Zero — imagem do produto"
+              alt="Meninas conversando — imagem do produto"
               className="w-full max-w-lg rounded-2xl shadow-2xl"
             />
           </div>

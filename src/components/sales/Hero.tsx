@@ -1,5 +1,5 @@
 import { CTAButton } from "./CTAButton";
-import heroProduto from "@/assets/hero-produto.png";
+import heroProduto from "@/assets/Meninas Conversando.png";
 import logo from "@/assets/logo.png";
 
 export function Hero() {
@@ -37,7 +37,7 @@ export function Hero() {
             <div className="mt-8 flex items-center justify-center md:hidden">
               <img
                 src={heroProduto}
-                alt="Seu Agente de IA do Zero — imagem do produto"
+                alt="Meninas conversando — imagem do produto"
                 className="w-full max-w-lg rounded-2xl shadow-2xl"
               />
             </div>
@@ -51,7 +51,7 @@ export function Hero() {
           <div className="hidden md:flex flex-1 items-center justify-center">
             <img
               src={heroProduto}
-              alt="Seu Agente de IA do Zero — imagem do produto"
+              alt="Meninas conversando — imagem do produto"
               className="w-full max-w-lg rounded-2xl shadow-2xl"
             />
           </div>

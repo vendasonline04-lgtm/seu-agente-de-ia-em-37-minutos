@@ -1,5 +1,5 @@
 import { CTAButton } from "./CTAButton";
-import heroProduto from "@/assets/hero-produto.png";
+import heroProduto from "@/assets/Meninas Conversando.png";
 import logo from "@/assets/logo.png";
 
 export function Hero() {

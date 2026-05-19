@@ -18,7 +18,7 @@ export function Hero() {
           <img
             src={logo}
             alt="Agente de IA do Zero — Simplifica-AI"
-            className="h-36 w-auto object-contain sm:h-44"
+            className="h-20 w-auto object-contain sm:h-24"
           />
           <div className="flex flex-col text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
             <span>Agente de IA</span>

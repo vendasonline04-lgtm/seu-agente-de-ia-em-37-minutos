@@ -41,7 +41,7 @@ export function Hero() {
             <div className="mt-8 flex items-center justify-center md:hidden">
               <img
                 src={heroProduto}
-                alt="Meninas conversando — imagem do produto"
+                alt="Ganhei tempo com meu agente, ele faz tudo por mim!"
                 className="w-full max-w-lg rounded-2xl shadow-2xl"
               />
             </div>

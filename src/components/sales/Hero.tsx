@@ -14,12 +14,15 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl">
 
         {/* Logo no topo */}
-        <div className="mb-6 flex justify-center">
+        <div className="mb-6 flex items-center justify-center gap-4">
           <img
             src={logo}
             alt="Agente de IA do Zero — Simplifica-AI"
             className="h-36 w-auto object-contain sm:h-44"
           />
+          <span className="text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
+            Agente de IA do Zero
+          </span>
         </div>
 
         <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">

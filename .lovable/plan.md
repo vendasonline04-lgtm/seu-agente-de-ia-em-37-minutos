@@ -1,6 +1,6 @@
 ## Objetivo
 
-Substituir a imagem exibida no Hero da landing page de `hero-produto.png` para `Meninas Conversando.png`.
+No topo do Hero, exibir a imagem da logo com a frase "Agente de IA do Zero" ao lado direito — sem nenhum outro texto acompanhando a logo.
 
 ## Arquivo a alterar
 
@@ -8,9 +8,12 @@ Substituir a imagem exibida no Hero da landing page de `hero-produto.png` para `
 
 ## Mudança
 
-- Trocar o import `heroProduto` de `@/assets/hero-produto.png` para `@/assets/Meninas Conversando.png`.
-- Atualizar os atributos `alt` das duas tags `<img>` para refletir a nova imagem (ex: "Meninas conversando — imagem do produto").
+- Substituir o bloco atual da logo por um container `flex items-center justify-center gap-4`.
+- Dentro do container:
+  - A imagem da logo (mantendo `h-36 sm:h-44 w-auto object-contain`).
+  - Um `<span>` à direita com o texto "Agente de IA do Zero", em bold, branco, tamanho proporcional (ex.: `text-2xl sm:text-3xl md:text-4xl leading-tight`).
+- Garantir bom alinhamento vertical e responsivo (texto não quebra de forma estranha no mobile 694px).
 
 ## Fora de escopo
 
-- Nenhuma outra alteração de layout, texto ou estilo.
+- Não alterar nenhuma outra seção, copy, imagem ou estilo do site.

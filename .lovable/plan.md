@@ -1,15 +1,32 @@
-## Ajustes
+## Destaque premium nos 3 primeiros itens do bloco "Veja tudo que você vai receber"
 
-### 1. Ícone "Lista das 5 ferramentas" não carrega
-O arquivo é `src/assets/Ferramentas 04.png` — o espaço no nome quebra o import em produção. Renomear para `src/assets/Ferramentas04.png` e atualizar o import em `src/components/sales/Deliverables.tsx`.
+Aplicar efeito de destaque visual nos 3 primeiros cards (Aula, Checklist, Template) do componente `Deliverables.tsx`, mantendo os 2 últimos com o estilo atual.
 
-### 2. Frase ao lado do boneco no logo (Hero)
-Em `src/components/sales/Hero.tsx`, o bloco do logo usa `gap-0` mas o PNG do boneco tem padding interno transparente, deixando a frase visualmente longe. Aplicar margem negativa no texto (`-ml-3 sm:-ml-4`) para encostar "Agente de IA / do Zero" diretamente ao lado do boneco, sem distância.
+### O que muda
 
-### 3. Tamanho da imagem do menino triste = menino feliz
-- `Solution.tsx` (menino feliz): `max-w-2xl`
-- `ProblemCycle.tsx` (ciclo bugado / menino triste): atualmente `max-w-md`
-Alterar `ProblemCycle.tsx` para `max-w-2xl` para igualar as duas imagens.
+Em `src/components/sales/Deliverables.tsx`, marcar os 3 primeiros itens como `premium` e renderizar com:
 
-## Fora do escopo
-Nenhuma outra alteração de conteúdo, cores ou layout.
+1. **Glow externo laranja/dourado** ao redor da caixa (box-shadow forte em tom #FF7A00/dourado).
+2. **Borda interna iluminada** sutil no topo/esquerda (gradient border ou inset shadow).
+3. **Fundo levemente mais claro** que os 2 últimos, para sensação de "elevação".
+4. **Badge hexagonal dourado** à direita, antes do preço, com ícone diferente por item:
+   - Item 1 (Aula): diamante
+   - Item 2 (Checklist): coroa
+   - Item 3 (Template): estrela
+   Usando ícones do `lucide-react` (`Gem`, `Crown`, `Star`) dentro de um hexágono dourado em CSS (clip-path) com brilho.
+5. **Preço com leve glow** laranja nos 3 primeiros.
+
+Os 2 últimos itens (Ferramentas, Ideias) ficam com o card atual `bg-white/5 ring-white/10` — sem glow, sem badge — para reforçar a hierarquia.
+
+### Detalhes técnicos
+
+- Adicionar campo `premium: boolean` e `badgeIcon` no array `items`.
+- Criar variante visual condicional no `<li>`:
+  - Premium: `style={{ boxShadow: "0 0 40px -5px rgba(255,122,0,0.45), inset 1px 1px 0 rgba(255,200,100,0.35)" }}` + `bg-gradient-to-br from-white/[0.08] to-white/[0.03]`.
+  - Padrão: classes atuais.
+- Badge hexagonal: `div` com `clip-path: polygon(...)`, fundo gradiente dourado (`from-amber-400 to-amber-600`), ícone branco/dourado-claro centralizado, com `drop-shadow` dourado.
+- Preço premium: `text-alert` com `drop-shadow-[0_0_8px_rgba(255,122,0,0.6)]`.
+- Os ícones circulares atuais (laranja) permanecem inalterados — conforme pedido na referência ("ícones originais mantidos").
+
+### Fora do escopo
+Nenhuma mudança nos textos, preços, ordem, cores globais ou outros componentes da página.

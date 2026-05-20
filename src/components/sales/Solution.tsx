@@ -1,28 +1,5 @@
 import meninoFeliz from "@/assets/menino-feliz.png";
 
-const leftBubbles = [
-  "Inacreditável! Meu agente faz tudo!",
-  "Agora vou focar no que importa",
-  "Não perco mais dinheiro à toa",
-];
-
-const rightBubbles = [
-  "Vou ganhar muito dinheiro com meu agente!",
-  "Não perco mais tempo repetindo tarefas",
-  "Finalmente está funcionando!",
-];
-
-function Bubble({ text, side }: { text: string; side: "left" | "right" }) {
-  return (
-    <div
-      className="rounded-2xl px-4 py-3 text-center text-sm font-bold leading-snug text-white bg-secondary"
-      style={{ maxWidth: 160 }}
-    >
-      {text}
-    </div>
-  );
-}
-
 export function Solution() {
   return (
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
@@ -45,30 +22,12 @@ export function Solution() {
             Imagina só criar seu agente do zero sozinho, do conforto da sua casa, no seu próprio computador...
           </p>
 
-          {/* Balões + imagem */}
-          <div className="my-6 flex items-center justify-center gap-4">
-            {/* Balões esquerdos */}
-            <div className="flex flex-col gap-3">
-              {leftBubbles.map((t, i) => (
-                <Bubble key={i} text={t} side="left" />
-              ))}
-            </div>
-
-            {/* Imagem central */}
-            <div className="shrink-0">
-              <img
-                src={meninoFeliz}
-                alt="Pessoa feliz com seu agente de IA funcionando"
-                className="w-48 rounded-2xl sm:w-56 md:w-64"
-              />
-            </div>
-
-            {/* Balões direitos */}
-            <div className="flex flex-col gap-3">
-              {rightBubbles.map((t, i) => (
-                <Bubble key={i} text={t} side="right" />
-              ))}
-            </div>
+          <div className="my-6 flex justify-center">
+            <img
+              src={meninoFeliz}
+              alt="Pessoa feliz com seu agente de IA funcionando"
+              className="w-full max-w-2xl rounded-2xl"
+            />
           </div>
 
           <p className="mt-3 text-xl font-bold text-white">

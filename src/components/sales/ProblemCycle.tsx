@@ -1,32 +1,5 @@
 import cicloBugado from "@/assets/ciclo-bugado.png";
 
-const leftBubbles = [
-  "Mais um vídeo sem entender nada..",
-  "Não sei por onde começar",
-  "Meus clientes chamando, e eu não consigo atender",
-];
-
-const rightBubbles = [
-  "Tanta informação que eu me perco",
-  "Minha cabeça bugou de novo",
-  "Toda hora eu travo e não consigo terminar",
-];
-
-function Bubble({ text, side }: { text: string; side: "left" | "right" }) {
-  return (
-    <div
-      className={`rounded-2xl px-4 py-3 text-center text-sm font-bold leading-snug text-white ${
-        side === "left"
-          ? "rounded-bl-none bg-secondary"
-          : "rounded-br-none bg-primary"
-      }`}
-      style={{ maxWidth: 160 }}
-    >
-      {text}
-    </div>
-  );
-}
-
 export function ProblemCycle() {
   return (
     <section className="bg-background px-4 py-20 text-foreground">
@@ -38,30 +11,12 @@ export function ProblemCycle() {
           Hoje você vive um ciclo que não te deixa sair do lugar.
         </p>
 
-        {/* Balões + imagem */}
-        <div className="mt-8 flex items-center justify-center gap-4">
-          {/* Balões esquerdos */}
-          <div className="flex flex-col gap-3">
-            {leftBubbles.map((t, i) => (
-              <Bubble key={i} text={t} side="left" />
-            ))}
-          </div>
-
-          {/* Imagem central */}
-          <div className="shrink-0">
-            <img
-              src={cicloBugado}
-              alt="Pessoa frustrada tentando aprender agentes de IA sozinha"
-              className="w-48 sm:w-56 md:w-64"
-            />
-          </div>
-
-          {/* Balões direitos */}
-          <div className="flex flex-col gap-3">
-            {rightBubbles.map((t, i) => (
-              <Bubble key={i} text={t} side="right" />
-            ))}
-          </div>
+        <div className="mt-8 flex justify-center">
+          <img
+            src={cicloBugado}
+            alt="Ciclo de frustração ao tentar aprender agentes de IA sozinho"
+            className="w-full max-w-md rounded-2xl"
+          />
         </div>
 
         <p className="mt-10 text-center text-lg font-semibold">

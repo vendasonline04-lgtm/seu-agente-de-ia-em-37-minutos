@@ -1,19 +1,19 @@
-import { Gem, Crown, Star } from "lucide-react";
 import aulaIcon from "@/assets/Aula01.png";
 import checklistIcon from "@/assets/checklist02.png";
 import promptIcon from "@/assets/Prompt03.png";
 import ferramentasIcon from "@/assets/Ferramentas04.png";
 import ideiasIcon from "@/assets/Ideias03.png";
+import badgeDiamond from "@/assets/badge-diamond.png";
+import badgeCrown from "@/assets/badge-crown.png";
+import badgeStar from "@/assets/badge-star.png";
 
 const items = [
-  { icon: aulaIcon, title: "Aula de 37 minutos", desc: "Em menos de 37 minutos você cria seu primeiro agente de IA do zero", price: "R$ 197", premium: true, BadgeIcon: Gem },
-  { icon: checklistIcon, title: "Checklist de configuração", desc: "Configure tudo sem travar, mesmo que nunca tenha criado um agente antes", price: "R$ 87", premium: true, BadgeIcon: Crown },
-  { icon: promptIcon, title: "Template do prompt de sistema", desc: "Copia, e cola. Não precisa criar do zero na próxima vez.", price: "R$ 67", premium: true, BadgeIcon: Star },
-  { icon: ferramentasIcon, title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "As ferramentas gratuitas que estão acelerando quem entrou cedo no mercado de IA.", price: "R$ 47", premium: false },
-  { icon: ideiasIcon, title: "3 ideias de agentes prontos para criar e monetizar na sequência", desc: "Terminou o primeiro? Então você já pode fazer o próximo!", price: "R$ 47", premium: false },
+  { icon: aulaIcon, title: "Aula de 37 minutos", desc: "Em menos de 37 minutos você cria seu primeiro agente de IA do zero", price: "R$ 197", premium: true, badge: badgeDiamond },
+  { icon: checklistIcon, title: "Checklist de configuração", desc: "Configure tudo sem travar, mesmo que nunca tenha criado um agente antes", price: "R$ 87", premium: true, badge: badgeCrown },
+  { icon: promptIcon, title: "Template do prompt de sistema", desc: "Copia, e cola. Não precisa criar do zero na próxima vez.", price: "R$ 67", premium: true, badge: badgeStar },
+  { icon: ferramentasIcon, title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "As ferramentas gratuitas que estão acelerando quem entrou cedo no mercado de IA.", price: "R$ 47", premium: false, badge: null },
+  { icon: ideiasIcon, title: "3 ideias de agentes prontos para criar e monetizar na sequência", desc: "Terminou o primeiro? Então você já pode fazer o próximo!", price: "R$ 47", premium: false, badge: null },
 ];
-
-const hexClip = { clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" };
 
 export function Deliverables() {
   return (
@@ -25,7 +25,6 @@ export function Deliverables() {
 
         <ul className="mt-12 space-y-5">
           {items.map((it, i) => {
-            const BadgeIcon = it.BadgeIcon;
             return (
               <li
                 key={i}
@@ -48,26 +47,17 @@ export function Deliverables() {
                   <h3 className="text-lg font-bold">{it.title}</h3>
                   <p className="mt-1 text-white/80">{it.desc}</p>
                 </div>
-                {it.premium && BadgeIcon && (
-                  <div className="relative hidden shrink-0 sm:block" style={{ width: 44, height: 50 }}>
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        ...hexClip,
-                        background: "linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #b45309 100%)",
-                        filter: "drop-shadow(0 0 8px rgba(255,170,60,0.7))",
-                      }}
-                    />
-                    <div
-                      className="absolute inset-[2px] flex items-center justify-center"
-                      style={{
-                        ...hexClip,
-                        background: "linear-gradient(135deg, #fbbf24 0%, #d97706 100%)",
-                      }}
-                    >
-                      <BadgeIcon className="h-5 w-5 text-amber-50" strokeWidth={2.5} />
-                    </div>
-                  </div>
+                {it.premium && it.badge && (
+                  <img
+                    src={it.badge}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    width={56}
+                    height={56}
+                    className="hidden h-14 w-14 shrink-0 sm:block"
+                    style={{ filter: "drop-shadow(0 0 10px rgba(255,170,60,0.55))" }}
+                  />
                 )}
                 <span
                   className={

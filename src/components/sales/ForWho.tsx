@@ -1,13 +1,14 @@
 import doresMenina from "@/assets/DoresMenina.jpg";
 
 const items = [
-  "Fica perdido com tanta informação e não sai do lugar",
+  "Fica perdida com tanta informação e não sai do lugar",
   "Tenta entender por conta própria e sempre trava no mesmo ponto",
   "Vê outras pessoas ganhando dinheiro com agentes enquanto você ainda está no conteúdo",
   "Quer criar algo real, mas quando vai ver já não sabe mais que ordem seguir",
-  "Está cansado de consumir um monte de conteúdo e fica só perdendo o foco",
+  "Está cansada de consumir um monte de conteúdo e fica só perdendo o foco",
   "Perde tempo e dinheiro à toda por não saber usar IA",
   "Faz tarefas repetitivas e precisa ganhar tempo, para focar no que realmente importa",
+  "Vê o seu tempo sendo consumido à toa, por algo que você podia programar pra fazer no seu lugar...",
 ];
 
 export function ForWho() {
@@ -45,7 +46,7 @@ export function ForWho() {
 
         </div>
 
-        <p className="mt-8 text-base font-semibold text-primary sm:text-lg">
+        <p className="mt-8 text-center text-base font-semibold text-primary sm:text-lg">
           Se você se reconheceu em algum desses pontos, esse produto é para você.
         </p>
       </div>

@@ -1,5 +1,5 @@
 import { CTAButton } from "./CTAButton";
-import heroProduto from "@/assets/ganhei-tempo.png";
+import heroProduto from "@/assets/meninafelizbloco1.png";
 import logo from "@/assets/logo-icon.png";
 
 export function Hero() {

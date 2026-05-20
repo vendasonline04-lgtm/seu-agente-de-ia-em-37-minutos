@@ -1,7 +1,7 @@
 import setaLaranja from "@/assets/seta-laranja.png";
 
 const steps = [
-  { n: "01", title: "Configura o ambiente", desc: "Em menos de 5 minutos." },
+  { n: "01", title: "Configura o ambiente", desc: "" },
   { n: "02", title: "Define o objetivo e o comportamento do agente", desc: "" },
   { n: "03", title: "Conecta as ferramentas e testa ao vivo", desc: "" },
   { n: "04", title: "Seu agente está rodando. Você criou.", desc: "" },

@@ -69,7 +69,7 @@ export function OfferCTA() {
             </div>
 
             <div className="mt-10">
-              <CTAButton variant="purple">Quero meu agente de IA do zero agora</CTAButton>
+              <CTAButton variant="purple">Preciso de um agente de IA urgente</CTAButton>
             </div>
 
             {/* Ícones de pagamento */}

@@ -1,9 +1,9 @@
 const items = [
-  "Você fica perdido com tanta informação e não sai do lugar",
+  "Fica perdido com tanta informação e não sai do lugar",
   "Tenta entender por conta própria e sempre trava no mesmo ponto",
   "Vê outras pessoas ganhando dinheiro com agentes enquanto você ainda está no conteúdo",
   "Quer criar algo real, mas quando vai ver já não sabe mais que ordem seguir",
-  "está cansado de consumir um monte de conteúdo e fica só perdendo o foco",
+  "Está cansado de consumir um monte de conteúdo e fica só perdendo o foco",
   "Perde tempo e dinheiro à toda por não saber usar IA",
   "Faz tarefas repetitivas e precisa ganhar tempo, para focar no que realmente importa",
 ];

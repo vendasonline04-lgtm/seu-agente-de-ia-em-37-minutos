@@ -14,13 +14,13 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl">
 
         {/* Logo no topo */}
-        <div className="mb-6 flex items-center justify-center gap-4">
+        <div className="mb-6 flex items-center justify-center gap-1">
           <img
             src={logo}
             alt="Agente de IA do Zero — Simplifica-AI"
             className="h-20 w-auto object-contain sm:h-24"
           />
-          <div className="flex flex-col text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
+          <div className="flex flex-col items-center text-base font-bold leading-tight text-white sm:text-lg">
             <span>Agente de IA</span>
             <span>do Zero</span>
           </div>
@@ -47,7 +47,7 @@ export function Hero() {
             </div>
 
             <div className="mt-10">
-              <CTAButton variant="orange" className="text-lg text-center">Quero meu agente de ia agora</CTAButton>
+              <CTAButton variant="orange" className="text-lg text-center">Preciso de um agente de IA urgente</CTAButton>
             </div>
           </div>
 

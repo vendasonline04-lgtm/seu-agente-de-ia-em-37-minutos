@@ -26,6 +26,10 @@ const faqs = [
     q: "É seguro comprar aqui?",
     a: "Sim. Pagamento processado com criptografia SSL. Seus dados estão protegidos.",
   },
+  {
+    q: "Não sei usar nada de N8N. Qual ferramenta de IA usaremos?",
+    a: "Para esta aula, usaremos o Claude Code plano PRO. Dentro dele usaremos várias ferramentas gratuitas.",
+  },
 ];
 
 export function FAQ() {

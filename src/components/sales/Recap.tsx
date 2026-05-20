@@ -2,7 +2,7 @@ import { Zap, ShieldCheck } from "lucide-react";
 import { CTAButton } from "./CTAButton";
 
 const items = [
-  "Aula de 37 minutos — do zero ao agente rodando",
+  "Aula de 37 minutos: do zero ao agente rodando",
   "Checklist de configuração",
   "Template do prompt de sistema",
   "Lista das 5 ferramentas gratuitas",
@@ -47,7 +47,7 @@ export function Recap() {
         </div>
 
         <div className="mt-8">
-          <CTAButton>Quero meu agente de IA do zero agora</CTAButton>
+          <CTAButton>Preciso de um agente de IA urgente</CTAButton>
         </div>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm font-semibold">

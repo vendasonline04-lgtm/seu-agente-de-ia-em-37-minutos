@@ -25,7 +25,6 @@ export function Deliverables() {
 
         <ul className="mt-12 space-y-5">
           {items.map((it, i) => {
-            const BadgeIcon = it.BadgeIcon;
             return (
               <li
                 key={i}
@@ -48,26 +47,17 @@ export function Deliverables() {
                   <h3 className="text-lg font-bold">{it.title}</h3>
                   <p className="mt-1 text-white/80">{it.desc}</p>
                 </div>
-                {it.premium && BadgeIcon && (
-                  <div className="relative hidden shrink-0 sm:block" style={{ width: 44, height: 50 }}>
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        ...hexClip,
-                        background: "linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #b45309 100%)",
-                        filter: "drop-shadow(0 0 8px rgba(255,170,60,0.7))",
-                      }}
-                    />
-                    <div
-                      className="absolute inset-[2px] flex items-center justify-center"
-                      style={{
-                        ...hexClip,
-                        background: "linear-gradient(135deg, #fbbf24 0%, #d97706 100%)",
-                      }}
-                    >
-                      <BadgeIcon className="h-5 w-5 text-amber-50" strokeWidth={2.5} />
-                    </div>
-                  </div>
+                {it.premium && it.badge && (
+                  <img
+                    src={it.badge}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    width={56}
+                    height={56}
+                    className="hidden h-14 w-14 shrink-0 sm:block"
+                    style={{ filter: "drop-shadow(0 0 10px rgba(255,170,60,0.55))" }}
+                  />
                 )}
                 <span
                   className={

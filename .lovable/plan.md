@@ -1,10 +1,15 @@
-## Objetivo
-Alterar o texto do balão inferior esquerdo da imagem `src/assets/menino-feliz.png` de "Não perco mais dinheiro à toa" para "Não perco mais nenhum cliente", mantendo todo o restante da imagem intacto.
+## Ajustes
 
-## Alterações
-- Usar `imagegen--edit_image` sobre `src/assets/menino-feliz.png` substituindo apenas o texto daquele balão roxo.
-- Manter personagem, fundo, demais balões, cores e layout exatamente iguais.
-- Salvar sobrescrevendo o mesmo arquivo (nenhuma alteração de código necessária).
+### 1. Ícone "Lista das 5 ferramentas" não carrega
+O arquivo é `src/assets/Ferramentas 04.png` — o espaço no nome quebra o import em produção. Renomear para `src/assets/Ferramentas04.png` e atualizar o import em `src/components/sales/Deliverables.tsx`.
+
+### 2. Frase ao lado do boneco no logo (Hero)
+Em `src/components/sales/Hero.tsx`, o bloco do logo usa `gap-0` mas o PNG do boneco tem padding interno transparente, deixando a frase visualmente longe. Aplicar margem negativa no texto (`-ml-3 sm:-ml-4`) para encostar "Agente de IA / do Zero" diretamente ao lado do boneco, sem distância.
+
+### 3. Tamanho da imagem do menino triste = menino feliz
+- `Solution.tsx` (menino feliz): `max-w-2xl`
+- `ProblemCycle.tsx` (ciclo bugado / menino triste): atualmente `max-w-md`
+Alterar `ProblemCycle.tsx` para `max-w-2xl` para igualar as duas imagens.
 
 ## Fora do escopo
-- Nenhum outro balão, imagem ou componente.
+Nenhuma outra alteração de conteúdo, cores ou layout.

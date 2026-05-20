@@ -20,7 +20,7 @@ export function Hero() {
             alt="Agente de IA do Zero — Simplifica-AI"
             className="h-20 w-auto object-contain sm:h-24"
           />
-          <div className="flex flex-col items-center text-base font-bold leading-tight text-white sm:text-lg">
+          <div className="-ml-3 flex flex-col items-center text-base font-bold leading-tight text-white sm:-ml-4 sm:text-lg">
             <span>Agente de IA</span>
             <span>do Zero</span>
           </div>

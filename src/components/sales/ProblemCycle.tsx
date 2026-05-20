@@ -15,7 +15,7 @@ export function ProblemCycle() {
           <img
             src={cicloBugado}
             alt="Ciclo de frustração ao tentar aprender agentes de IA sozinho"
-            className="w-full max-w-md rounded-2xl"
+            className="w-full max-w-2xl rounded-2xl"
           />
         </div>
 

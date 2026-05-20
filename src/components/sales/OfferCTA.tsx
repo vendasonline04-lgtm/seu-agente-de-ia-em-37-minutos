@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CTAButton } from "./CTAButton";
-import { Zap, ShieldCheck } from "lucide-react";
+import { Zap, ShieldCheck, Clock } from "lucide-react";
 
 function Countdown() {
   const [time, setTime] = useState({ h: 0, m: 30, s: 0 });
@@ -23,14 +23,138 @@ function Countdown() {
   const pad = (n: number) => n.toString().padStart(2, "0");
 
   return (
-    <div className="mb-6 flex flex-col items-center gap-3">
-      <div className="rounded-2xl bg-alert px-8 py-4 text-center">
-        <p className="text-sm font-bold uppercase tracking-widest text-white">
-          Oferta válida só hoje
-        </p>
-        <div className="font-mono text-5xl font-bold tabular-nums tracking-wider text-white">
-          {pad(time.h)}:{pad(time.m)}:{pad(time.s)}
+    <div className="mb-6 flex flex-col items-center gap-4">
+      {/* Countdown box */}
+      <div
+        className="relative w-full overflow-hidden rounded-2xl px-6 py-6 text-center"
+        style={{
+          background: "linear-gradient(135deg, #FF7A00 0%, #E85D04 100%)",
+          boxShadow:
+            "0 0 0 1px rgba(255,122,0,0.3), 0 0 40px rgba(255,122,0,0.45), 0 10px 40px rgba(232,93,4,0.4)",
+        }}
+      >
+        {/* Internal shine */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-1/2"
+          style={{
+            background:
+              "radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.22) 0%, transparent 75%)",
+          }}
+        />
+
+        {/* Left glow pulse */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -left-6 top-1/2 -translate-y-1/2 h-24 w-24 rounded-full"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(255,210,120,0.55) 0%, transparent 70%)",
+            filter: "blur(10px)",
+          }}
+        />
+        {/* Right glow pulse */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-6 top-1/2 -translate-y-1/2 h-24 w-24 rounded-full"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(255,210,120,0.55) 0%, transparent 70%)",
+            filter: "blur(10px)",
+          }}
+        />
+
+        {/* Header */}
+        <div className="relative mb-4 flex items-center justify-center gap-2">
+          <Clock className="h-4 w-4 text-white/90" />
+          <span className="text-xs font-bold uppercase tracking-[0.25em] text-white/90">
+            OFERTA TERMINA EM:
+          </span>
         </div>
+
+        {/* Digits */}
+        <div className="relative flex items-end justify-center gap-1">
+          {/* Hours */}
+          <div className="flex flex-col items-center">
+            <span
+              className="font-mono tabular-nums text-white leading-none"
+              style={{
+                fontSize: "clamp(3rem, 12vw, 5rem)",
+                fontWeight: 900,
+                letterSpacing: "0.04em",
+                textShadow: "0 3px 14px rgba(0,0,0,0.25)",
+              }}
+            >
+              {pad(time.h)}
+            </span>
+            <span className="mt-1.5 text-[9px] font-bold uppercase tracking-[0.22em] text-white/65">
+              HORAS
+            </span>
+          </div>
+
+          <span
+            className="text-white leading-none mb-6"
+            style={{ fontSize: "clamp(2.5rem, 10vw, 4.5rem)", fontWeight: 900, opacity: 0.9 }}
+          >
+            :
+          </span>
+
+          {/* Minutes */}
+          <div className="flex flex-col items-center">
+            <span
+              className="font-mono tabular-nums text-white leading-none"
+              style={{
+                fontSize: "clamp(3rem, 12vw, 5rem)",
+                fontWeight: 900,
+                letterSpacing: "0.04em",
+                textShadow: "0 3px 14px rgba(0,0,0,0.25)",
+              }}
+            >
+              {pad(time.m)}
+            </span>
+            <span className="mt-1.5 text-[9px] font-bold uppercase tracking-[0.22em] text-white/65">
+              MINUTOS
+            </span>
+          </div>
+
+          <span
+            className="text-white leading-none mb-6"
+            style={{ fontSize: "clamp(2.5rem, 10vw, 4.5rem)", fontWeight: 900, opacity: 0.9 }}
+          >
+            :
+          </span>
+
+          {/* Seconds */}
+          <div className="flex flex-col items-center">
+            <span
+              className="font-mono tabular-nums text-white leading-none"
+              style={{
+                fontSize: "clamp(3rem, 12vw, 5rem)",
+                fontWeight: 900,
+                letterSpacing: "0.04em",
+                textShadow: "0 3px 14px rgba(0,0,0,0.25)",
+              }}
+            >
+              {pad(time.s)}
+            </span>
+            <span className="mt-1.5 text-[9px] font-bold uppercase tracking-[0.22em] text-white/65">
+              SEGUNDOS
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* 85% OFF badge */}
+      <div
+        className="inline-flex items-center gap-2 rounded-xl px-7 py-2.5"
+        style={{
+          background: "linear-gradient(135deg, #FFD700 0%, #FFA500 100%)",
+          boxShadow: "0 4px 18px rgba(255,165,0,0.45), 0 1px 0 rgba(255,255,255,0.3) inset",
+        }}
+      >
+        <span className="text-sm font-black uppercase tracking-widest text-amber-900">
+          🔥 85% OFF HOJE!
+        </span>
       </div>
     </div>
   );

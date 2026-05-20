@@ -1,11 +1,15 @@
-import { Check } from "lucide-react";
+import aulaIcon from "@/assets/Aula01.png";
+import checklistIcon from "@/assets/checklist02.png";
+import promptIcon from "@/assets/Prompt03.png";
+import ferramentasIcon from "@/assets/Ferramentas 04.png";
+import ideiasIcon from "@/assets/Ideias03.png";
 
 const items = [
-  { title: "Aula de 37 minutos", desc: "Você assiste e aplica sem segredo e sem enrolação." },
-  { title: "Checklist de configuração", desc: "Cada etapa numerada para você não perder nenhum passo e replicar em qualquer agente novo." },
-  { title: "Template do prompt de sistema", desc: "Copia, e cola. Não precisa criar do zero na próxima vez." },
-  { title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "Tudo gratuito. Tudo testado. Você não precisa pagar nada extra para criar." },
-  { title: "3 ideias de agentes prontos para criar e monetizar na sequência", desc: "Terminou o primeiro? Então você já pode fazer o próximo!" },
+  { icon: aulaIcon, title: "Aula de 37 minutos", desc: "Você assiste e aplica sem segredo e sem enrolação.", price: "R$ 197" },
+  { icon: checklistIcon, title: "Checklist de configuração", desc: "Cada etapa numerada para você não perder nenhum passo e replicar em qualquer agente novo.", price: "R$ 87" },
+  { icon: promptIcon, title: "Template do prompt de sistema", desc: "Copia, e cola. Não precisa criar do zero na próxima vez.", price: "R$ 67" },
+  { icon: ferramentasIcon, title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "Tudo gratuito. Tudo testado. Você não precisa pagar nada extra para criar.", price: "R$ 47" },
+  { icon: ideiasIcon, title: "3 ideias de agentes prontos para criar e monetizar na sequência", desc: "Terminou o primeiro? Então você já pode fazer o próximo!", price: "R$ 47" },
 ];
 
 export function Deliverables() {
@@ -20,18 +24,21 @@ export function Deliverables() {
           {items.map((it, i) => (
             <li
               key={i}
-              className="flex gap-4 rounded-xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur"
+              className="flex items-center gap-4 rounded-xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-alert text-alert-foreground">
-                <Check className="h-5 w-5" strokeWidth={3} />
-              </div>
-              <div>
+              <img src={it.icon} alt={it.title} className="h-12 w-12 shrink-0 object-contain" />
+              <div className="flex-1 min-w-0">
                 <h3 className="text-lg font-bold">{it.title}</h3>
                 <p className="mt-1 text-white/80">{it.desc}</p>
               </div>
+              <span className="shrink-0 text-lg font-bold text-alert">{it.price}</span>
             </li>
           ))}
         </ul>
+
+        <div className="mt-4 flex justify-end pr-1">
+          <span className="text-xl font-bold text-alert sm:text-2xl">Total R$ 445</span>
+        </div>
       </div>
     </section>
   );

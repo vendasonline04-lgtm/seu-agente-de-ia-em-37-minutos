@@ -20,7 +20,7 @@ export function ProblemCycle() {
         </div>
 
         <p className="mt-10 text-center text-lg font-semibold">
-          E enquanto você tenta entender por conta própria...
+          E enquanto você tenta entender sozinho...
         </p>
 
         <ul className="mt-4 space-y-3 text-base sm:text-lg">

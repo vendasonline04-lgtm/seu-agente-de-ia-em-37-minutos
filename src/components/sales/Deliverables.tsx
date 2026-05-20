@@ -12,8 +12,8 @@ export function Deliverables() {
   return (
     <section className="bg-primary px-4 py-20 text-primary-foreground">
       <div className="mx-auto max-w-4xl">
-        <h2 className="text-balance text-center text-3xl font-bold sm:text-4xl">
-          Olhe o que você vai receber:
+        <h2 className="text-balance text-center text-2xl font-bold sm:text-3xl">
+          Veja tudo que você vai receber para criar o seu agente em 37 minutos:
         </h2>
 
         <ul className="mt-12 space-y-5">

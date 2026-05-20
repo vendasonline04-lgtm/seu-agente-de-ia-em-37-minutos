@@ -199,17 +199,17 @@ export function OfferCTA() {
               </p>
 
               {/* 10x de + preço principal */}
-              <div className="mt-4 flex items-baseline justify-center gap-2">
+              <div className="mt-4 flex flex-nowrap items-baseline justify-center gap-2">
                 <span
-                  className="font-sans text-sm font-semibold"
+                  className="shrink-0 font-sans text-sm font-semibold"
                   style={{ color: "#9E8FB5" }}
                 >
                   10x de
                 </span>
                 <span
-                  className="font-display leading-none"
+                  className="whitespace-nowrap font-display leading-none"
                   style={{
-                    fontSize: "clamp(3.5rem, 14vw, 5.5rem)",
+                    fontSize: "clamp(2.8rem, 11vw, 4.5rem)",
                     fontWeight: 900,
                     color: "#6D1CC3",
                     textShadow: "0 2px 24px rgba(109,28,195,0.22)",

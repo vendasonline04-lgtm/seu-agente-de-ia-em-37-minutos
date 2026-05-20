@@ -1,19 +1,19 @@
-import { Gem, Crown, Star } from "lucide-react";
 import aulaIcon from "@/assets/Aula01.png";
 import checklistIcon from "@/assets/checklist02.png";
 import promptIcon from "@/assets/Prompt03.png";
 import ferramentasIcon from "@/assets/Ferramentas04.png";
 import ideiasIcon from "@/assets/Ideias03.png";
+import badgeDiamond from "@/assets/badge-diamond.png";
+import badgeCrown from "@/assets/badge-crown.png";
+import badgeStar from "@/assets/badge-star.png";
 
 const items = [
-  { icon: aulaIcon, title: "Aula de 37 minutos", desc: "Em menos de 37 minutos você cria seu primeiro agente de IA do zero", price: "R$ 197", premium: true, BadgeIcon: Gem },
-  { icon: checklistIcon, title: "Checklist de configuração", desc: "Configure tudo sem travar, mesmo que nunca tenha criado um agente antes", price: "R$ 87", premium: true, BadgeIcon: Crown },
-  { icon: promptIcon, title: "Template do prompt de sistema", desc: "Copia, e cola. Não precisa criar do zero na próxima vez.", price: "R$ 67", premium: true, BadgeIcon: Star },
-  { icon: ferramentasIcon, title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "As ferramentas gratuitas que estão acelerando quem entrou cedo no mercado de IA.", price: "R$ 47", premium: false },
-  { icon: ideiasIcon, title: "3 ideias de agentes prontos para criar e monetizar na sequência", desc: "Terminou o primeiro? Então você já pode fazer o próximo!", price: "R$ 47", premium: false },
+  { icon: aulaIcon, title: "Aula de 37 minutos", desc: "Em menos de 37 minutos você cria seu primeiro agente de IA do zero", price: "R$ 197", premium: true, badge: badgeDiamond },
+  { icon: checklistIcon, title: "Checklist de configuração", desc: "Configure tudo sem travar, mesmo que nunca tenha criado um agente antes", price: "R$ 87", premium: true, badge: badgeCrown },
+  { icon: promptIcon, title: "Template do prompt de sistema", desc: "Copia, e cola. Não precisa criar do zero na próxima vez.", price: "R$ 67", premium: true, badge: badgeStar },
+  { icon: ferramentasIcon, title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "As ferramentas gratuitas que estão acelerando quem entrou cedo no mercado de IA.", price: "R$ 47", premium: false, badge: null },
+  { icon: ideiasIcon, title: "3 ideias de agentes prontos para criar e monetizar na sequência", desc: "Terminou o primeiro? Então você já pode fazer o próximo!", price: "R$ 47", premium: false, badge: null },
 ];
-
-const hexClip = { clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" };
 
 export function Deliverables() {
   return (

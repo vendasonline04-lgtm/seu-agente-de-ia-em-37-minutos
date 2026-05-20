@@ -1,7 +1,7 @@
 import aulaIcon from "@/assets/Aula01.png";
 import checklistIcon from "@/assets/checklist02.png";
 import promptIcon from "@/assets/Prompt03.png";
-import ferramentasIcon from "@/assets/Ferramentas 04.png";
+import ferramentasIcon from "@/assets/Ferramentas04.png";
 import ideiasIcon from "@/assets/Ideias03.png";
 
 const items = [

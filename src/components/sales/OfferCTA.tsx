@@ -79,7 +79,7 @@ function Countdown() {
             <span
               className="font-mono tabular-nums text-white leading-none"
               style={{
-                fontSize: "clamp(3rem, 12vw, 5rem)",
+                fontSize: "clamp(1.8rem, 6vw, 2.6rem)",
                 fontWeight: 900,
                 letterSpacing: "0.04em",
                 textShadow: "0 3px 14px rgba(0,0,0,0.25)",
@@ -94,7 +94,7 @@ function Countdown() {
 
           <span
             className="text-white leading-none mb-6"
-            style={{ fontSize: "clamp(2.5rem, 10vw, 4.5rem)", fontWeight: 900, opacity: 0.9 }}
+            style={{ fontSize: "clamp(1.5rem, 5vw, 2.2rem)", fontWeight: 900, opacity: 0.9 }}
           >
             :
           </span>
@@ -104,7 +104,7 @@ function Countdown() {
             <span
               className="font-mono tabular-nums text-white leading-none"
               style={{
-                fontSize: "clamp(3rem, 12vw, 5rem)",
+                fontSize: "clamp(1.8rem, 6vw, 2.6rem)",
                 fontWeight: 900,
                 letterSpacing: "0.04em",
                 textShadow: "0 3px 14px rgba(0,0,0,0.25)",
@@ -119,7 +119,7 @@ function Countdown() {
 
           <span
             className="text-white leading-none mb-6"
-            style={{ fontSize: "clamp(2.5rem, 10vw, 4.5rem)", fontWeight: 900, opacity: 0.9 }}
+            style={{ fontSize: "clamp(1.5rem, 5vw, 2.2rem)", fontWeight: 900, opacity: 0.9 }}
           >
             :
           </span>
@@ -129,7 +129,7 @@ function Countdown() {
             <span
               className="font-mono tabular-nums text-white leading-none"
               style={{
-                fontSize: "clamp(3rem, 12vw, 5rem)",
+                fontSize: "clamp(1.8rem, 6vw, 2.6rem)",
                 fontWeight: 900,
                 letterSpacing: "0.04em",
                 textShadow: "0 3px 14px rgba(0,0,0,0.25)",
@@ -176,7 +176,7 @@ export function OfferCTA() {
 
             {/* Price block */}
             <div
-              className="mx-auto mt-2 w-full max-w-sm rounded-2xl px-8 py-8"
+              className="mx-auto mt-2 w-full max-w-md rounded-2xl px-8 py-8"
               style={{
                 background: "#FFFFFF",
                 boxShadow:
@@ -209,7 +209,7 @@ export function OfferCTA() {
                 <span
                   className="whitespace-nowrap font-display leading-none"
                   style={{
-                    fontSize: "clamp(2.8rem, 11vw, 4.5rem)",
+                    fontSize: "clamp(3.8rem, 13vw, 5.8rem)",
                     fontWeight: 900,
                     color: "#6D1CC3",
                     textShadow: "0 2px 24px rgba(109,28,195,0.22)",

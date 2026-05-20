@@ -2,11 +2,11 @@ import { Zap, ShieldCheck } from "lucide-react";
 import { CTAButton } from "./CTAButton";
 
 const items = [
-  "Aula de 37 minutos: do zero ao agente rodando",
-  "Checklist de configuração",
-  "Template do prompt de sistema",
-  "Lista das 5 ferramentas gratuitas",
-  "3 ideias de agentes para criar e monetizar",
+  { label: "Aula de 37 minutos: do zero ao agente rodando", price: "R$ 197" },
+  { label: "Checklist de configuração", price: "R$ 87" },
+  { label: "Template do prompt de sistema", price: "R$ 67" },
+  { label: "Lista das 5 ferramentas gratuitas", price: "R$ 47" },
+  { label: "3 ideias de agentes para criar e monetizar", price: "R$ 47" },
 ];
 
 export function Recap() {
@@ -19,13 +19,14 @@ export function Recap() {
 
         <ul className="mx-auto mt-10 max-w-xl space-y-3 text-left">
           {items.map((it, i) => (
-            <li key={i} className="flex items-start gap-3 rounded-lg bg-white/5 p-4 ring-1 ring-white/10">
+            <li key={i} className="flex items-center gap-3 rounded-lg bg-white/5 p-4 ring-1 ring-white/10">
               <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-alert">
                 <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
                   <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="text-lg">{it}</span>
+              <span className="flex-1 text-lg">{it.label}</span>
+              <span className="shrink-0 font-bold text-alert">{it.price}</span>
             </li>
           ))}
         </ul>

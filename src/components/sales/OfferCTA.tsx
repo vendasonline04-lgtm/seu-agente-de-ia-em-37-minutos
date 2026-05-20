@@ -174,22 +174,77 @@ export function OfferCTA() {
           <div className="relative">
             <Countdown />
 
-            <p className="text-lg text-foreground/70">
-              De <span className="line-through">R$ 445</span> por apenas:
-            </p>
+            {/* Price block */}
+            <div
+              className="mx-auto mt-2 w-full max-w-sm rounded-2xl px-8 py-8"
+              style={{
+                background: "#FFFFFF",
+                boxShadow:
+                  "0 0 0 1px rgba(109,28,195,0.08), 0 8px 32px rgba(109,28,195,0.12), 0 0 60px rgba(109,28,195,0.06)",
+              }}
+            >
+              {/* "De R$ 445 por apenas:" */}
+              <p
+                className="text-sm font-medium"
+                style={{ color: "#7B6F8C", letterSpacing: "0.01em" }}
+              >
+                De{" "}
+                <span
+                  className="line-through"
+                  style={{ color: "#9E8FB5", textDecorationColor: "#9E8FB5" }}
+                >
+                  R$ 445
+                </span>{" "}
+                por apenas:
+              </p>
 
-            {/* Parcelamento */}
-            <div className="mt-3 flex flex-col items-center gap-1">
-              <div className="flex items-baseline gap-1">
-                <span className="text-sm font-semibold text-foreground/60">10x de</span>
-                <span className="font-display text-5xl font-bold leading-none text-accent sm:text-6xl">
+              {/* 10x de + preço principal */}
+              <div className="mt-4 flex items-baseline justify-center gap-2">
+                <span
+                  className="font-sans text-sm font-semibold"
+                  style={{ color: "#9E8FB5" }}
+                >
+                  10x de
+                </span>
+                <span
+                  className="font-display leading-none"
+                  style={{
+                    fontSize: "clamp(3.5rem, 14vw, 5.5rem)",
+                    fontWeight: 900,
+                    color: "#6D1CC3",
+                    textShadow: "0 2px 24px rgba(109,28,195,0.22)",
+                    letterSpacing: "-0.02em",
+                  }}
+                >
                   R$ 8,12
                 </span>
               </div>
-              <span className="text-base font-semibold text-foreground/60">OU</span>
-              <span className="text-2xl font-bold text-foreground/70">
+
+              {/* Separador OU */}
+              <div className="my-5 flex items-center gap-4">
+                <div
+                  className="h-px flex-1 rounded-full"
+                  style={{ background: "linear-gradient(to right, transparent, rgba(109,28,195,0.15))" }}
+                />
+                <span
+                  className="text-xs font-bold uppercase tracking-[0.2em]"
+                  style={{ color: "#9E8FB5" }}
+                >
+                  OU
+                </span>
+                <div
+                  className="h-px flex-1 rounded-full"
+                  style={{ background: "linear-gradient(to left, transparent, rgba(109,28,195,0.15))" }}
+                />
+              </div>
+
+              {/* À vista */}
+              <p
+                className="font-display text-2xl font-bold"
+                style={{ color: "#531790", letterSpacing: "-0.01em" }}
+              >
                 R$ 67,00 à vista
-              </span>
+              </p>
             </div>
 
             <div className="mt-10">

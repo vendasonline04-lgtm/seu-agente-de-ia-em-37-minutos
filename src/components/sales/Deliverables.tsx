@@ -5,10 +5,10 @@ import ferramentasIcon from "@/assets/Ferramentas04.png";
 import ideiasIcon from "@/assets/Ideias03.png";
 
 const items = [
-  { icon: aulaIcon, title: "Aula de 37 minutos", desc: "Você assiste e aplica sem segredo e sem enrolação.", price: "R$ 197" },
-  { icon: checklistIcon, title: "Checklist de configuração", desc: "Cada etapa numerada para você não perder nenhum passo e replicar em qualquer agente novo.", price: "R$ 87" },
+  { icon: aulaIcon, title: "Aula de 37 minutos", desc: "Em menos de 37 minutos você cria seu primeiro agente de IA do zero", price: "R$ 197" },
+  { icon: checklistIcon, title: "Checklist de configuração", desc: "Configure tudo sem travar, mesmo que nunca tenha criado um agente antes", price: "R$ 87" },
   { icon: promptIcon, title: "Template do prompt de sistema", desc: "Copia, e cola. Não precisa criar do zero na próxima vez.", price: "R$ 67" },
-  { icon: ferramentasIcon, title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "Tudo gratuito. Tudo testado. Você não precisa pagar nada extra para criar.", price: "R$ 47" },
+  { icon: ferramentasIcon, title: "Lista das 5 ferramentas gratuitas mais usadas para criar agentes", desc: "As ferramentas gratuitas que estão acelerando quem entrou cedo no mercado de IA.", price: "R$ 47" },
   { icon: ideiasIcon, title: "3 ideias de agentes prontos para criar e monetizar na sequência", desc: "Terminou o primeiro? Então você já pode fazer o próximo!", price: "R$ 47" },
 ];
 

@@ -251,59 +251,41 @@ export function OfferCTA() {
               <CTAButton variant="purple">Quero meu agente de IA agora</CTAButton>
             </div>
 
-            {/* Trust — 3 colunas */}
-            <div className="mt-8 grid grid-cols-3 gap-3">
+            {/* Trust — linha única, ícone + texto */}
+            <div className="mt-3 flex flex-wrap items-start justify-center gap-x-6 gap-y-2">
               {(
                 [
-                  { Icon: Zap,         title: "Acesso imediato",   sub: "Comece agora mesmo"       },
+                  { Icon: Zap,         title: "Acesso imediato",    sub: "Comece agora mesmo"       },
                   { Icon: ShieldCheck, title: "Garantia de 7 dias", sub: "Risco zero para você"     },
-                  { Icon: Diamond,     title: "Acesso vitalício",  sub: "Atualizações para sempre" },
+                  { Icon: Diamond,     title: "Acesso vitalício",   sub: "Atualizações para sempre" },
                 ] as const
               ).map(({ Icon, title, sub }) => (
-                <div
-                  key={title}
-                  className="flex flex-col items-center gap-2 rounded-2xl bg-white px-2 py-5 text-center"
-                  style={{
-                    boxShadow:
-                      "0 0 0 1px rgba(109,28,195,0.07), 0 4px 20px rgba(109,28,195,0.07)",
-                  }}
-                >
-                  <div
-                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, rgba(123,44,245,0.13) 0%, rgba(74,20,140,0.08) 100%)",
-                    }}
-                  >
-                    <Icon className="h-5 w-5 text-accent" />
+                <div key={title} className="flex items-center gap-1.5">
+                  <Icon className="h-4 w-4 shrink-0 text-accent" />
+                  <div className="text-left">
+                    <p className="text-xs font-bold leading-tight text-foreground">{title}</p>
+                    <p className="text-[10px] leading-tight text-foreground/50">{sub}</p>
                   </div>
-                  <p className="text-xs font-bold leading-tight text-foreground sm:text-sm">
-                    {title}
-                  </p>
-                  <p className="text-[11px] leading-snug text-foreground/50">{sub}</p>
                 </div>
               ))}
             </div>
 
-            {/* Payment bar */}
-            <div
-              className="mt-5 flex items-center justify-center gap-3 rounded-2xl border border-border bg-white px-6 py-4"
-              style={{ boxShadow: "0 2px 12px rgba(109,28,195,0.05)" }}
-            >
-              <span className="flex items-center gap-1.5 rounded-lg border border-border bg-muted px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-foreground/70">
-                <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current text-accent" aria-label="Pix">
+            {/* Pagamentos */}
+            <div className="mt-3 flex items-center justify-center gap-2">
+              <span className="flex items-center gap-1 rounded-md border border-border bg-muted px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-foreground/60">
+                <svg viewBox="0 0 24 24" className="h-3 w-3 fill-current text-accent" aria-label="Pix">
                   <path d="M12 2L6.5 7.5 2 12l4.5 4.5L12 22l5.5-5.5L22 12l-4.5-4.5L12 2zm0 3.5l3.5 3.5-3.5 3.5L8.5 9 12 5.5zm-6.5 6.5L9 8.5 12 11.5 9 14.5 5.5 11zm6.5 6.5L8.5 13l3.5-3.5 3.5 3.5L12 18.5zM14.5 9l3.5 3.5-3.5 3.5L11 12.5l3.5-3.5z"/>
                 </svg>
                 PIX
               </span>
-              <span className="rounded-lg border border-border bg-muted px-2 py-1.5" aria-label="Visa">
-                <svg viewBox="0 0 38 24" className="h-5 w-8">
+              <span className="rounded-md border border-border bg-muted px-1.5 py-1" aria-label="Visa">
+                <svg viewBox="0 0 38 24" className="h-4 w-7">
                   <rect width="38" height="24" rx="3" fill="#1A1F71"/>
                   <text x="6" y="17" fill="white" fontSize="12" fontWeight="bold" fontFamily="Arial">VISA</text>
                 </svg>
               </span>
-              <span className="rounded-lg border border-border bg-muted px-2 py-1.5" aria-label="Mastercard">
-                <svg viewBox="0 0 38 24" className="h-5 w-8">
+              <span className="rounded-md border border-border bg-muted px-1.5 py-1" aria-label="Mastercard">
+                <svg viewBox="0 0 38 24" className="h-4 w-7">
                   <rect width="38" height="24" rx="3" fill="#252525"/>
                   <circle cx="14" cy="12" r="7" fill="#EB001B"/>
                   <circle cx="24" cy="12" r="7" fill="#F79E1B"/>
@@ -313,9 +295,9 @@ export function OfferCTA() {
             </div>
 
             {/* Compra segura */}
-            <div className="mt-4 flex items-center justify-center gap-1.5">
-              <Lock className="h-3 w-3 text-foreground/35" />
-              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground/35">
+            <div className="mt-2 flex items-center justify-center gap-1">
+              <Lock className="h-3 w-3 text-foreground/30" />
+              <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-foreground/30">
                 Compra 100% Segura e Protegida
               </span>
             </div>

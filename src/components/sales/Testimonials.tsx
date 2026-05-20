@@ -32,7 +32,7 @@ export function Testimonials() {
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-12 text-center text-3xl font-bold sm:text-4xl">
-          Quem já criou está dizendo:
+          Veja que pessoas comuns já estão criando seus próprios agentes:
         </h2>
         <div className="grid gap-6 md:grid-cols-3">
           {items.map((t, i) => (

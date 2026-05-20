@@ -13,7 +13,7 @@ export function ForWho() {
     <section className="bg-background px-4 py-20 text-foreground">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-center text-3xl font-bold sm:text-4xl">
-          Este produto é para você que:
+          O Agente de IA do Zero em 37 minutos é para você que:
         </h2>
         <ul className="mt-8 space-y-4 text-lg">
           {items.map((it, i) => (

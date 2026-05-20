@@ -26,7 +26,7 @@ export function Deliverables() {
               key={i}
               className="flex items-center gap-4 rounded-xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur"
             >
-              <img src={it.icon} alt={it.title} className="h-12 w-12 shrink-0 object-contain" />
+              <img src={it.icon} alt={it.title} className="h-12 w-12 shrink-0 rounded-full object-cover" />
               <div className="flex-1 min-w-0">
                 <h3 className="text-lg font-bold">{it.title}</h3>
                 <p className="mt-1 text-white/80">{it.desc}</p>

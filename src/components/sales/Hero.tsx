@@ -29,7 +29,7 @@ export function Hero() {
         <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">
 
           {/* Coluna esquerda — texto */}
-          <div className="flex-1 text-left">
+          <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl font-bold leading-[1.1] sm:text-4xl md:text-[2.6rem] text-white">
               Pare de perder horas tentando entender IA sozinho, e descubra como criar seu primeiro <span className="text-alert">Agente de IA do Zero</span> de forma simples, prática e sem programação: <span className="text-alert">em apenas 37 minutos!</span>
             </h1>

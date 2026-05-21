@@ -50,7 +50,6 @@ export function CTAButton({
       )}
 
       <span className="relative flex items-center gap-3">
-        {isPurple && <Rocket className="h-5 w-5 shrink-0" aria-hidden />}
         {children}
       </span>
     </a>

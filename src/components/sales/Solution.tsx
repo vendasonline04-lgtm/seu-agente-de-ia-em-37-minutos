@@ -8,14 +8,8 @@ export function Solution() {
           O problema não é falta de informação.
         </h2>
         <p className="mt-6 text-xl text-white/85">
-          É informação demais, sem saber por onde começar.
+          É informação demais, sem saber por onde começar. Em 37 minutos, você mesmo constrói seu agente de IA do zero, sem travar, sem precisar de ajuda.
         </p>
-
-        <div className="mt-8 space-y-5 text-lg leading-relaxed">
-          <p>
-            Em 37 minutos, você mesmo constrói seu agente de IA do zero, sem travar, sem precisar de ajuda.
-          </p>
-        </div>
 
         <div className="mt-10 rounded-2xl bg-white/5 p-8 ring-1 ring-white/10 backdrop-blur">
           <p className="text-lg italic text-white/90 font-bold">

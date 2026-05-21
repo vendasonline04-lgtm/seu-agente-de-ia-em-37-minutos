@@ -1,6 +1,6 @@
 import { CTAButton } from "./CTAButton";
 import heroProduto from "@/assets/meninafelizbloco1.png";
-import logo2 from "@/assets/logo2atual.png";
+import logo2 from "@/assets/logo2atual-dark.png";
 
 export function Hero() {
   return (
@@ -18,7 +18,7 @@ export function Hero() {
           <img
             src={logo2}
             alt="Agente de IA do Zero"
-            className="h-20 w-auto object-contain sm:h-24"
+            className="h-32 w-auto object-contain sm:h-40"
           />
         </div>
 

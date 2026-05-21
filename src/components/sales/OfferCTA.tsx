@@ -221,7 +221,7 @@ export function OfferCTA() {
               </div>
 
               {/* Separador OU */}
-              <div className="my-5 flex items-center gap-4">
+              <div className="my-2 flex items-center gap-4">
                 <div
                   className="h-px flex-1 rounded-full"
                   style={{ background: "linear-gradient(to right, transparent, rgba(109,28,195,0.15))" }}

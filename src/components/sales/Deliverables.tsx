@@ -76,7 +76,7 @@ export function Deliverables() {
         </ul>
 
         <div className="mt-4 flex justify-end pr-1">
-          <span className="text-xl font-bold text-alert sm:text-2xl">Total R$ 445</span>
+          <span className="text-xl font-bold text-alert sm:text-2xl">Tudo isso você pagaria um total de: R$ 445</span>
         </div>
       </div>
     </section>

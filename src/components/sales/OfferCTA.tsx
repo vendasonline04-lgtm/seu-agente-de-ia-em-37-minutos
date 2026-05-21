@@ -23,10 +23,10 @@ function Countdown() {
   const pad = (n: number) => n.toString().padStart(2, "0");
 
   return (
-    <div className="mb-6 flex flex-col items-center gap-4">
+    <div className="mb-3 flex flex-col items-center gap-2">
       {/* Countdown box */}
       <div
-        className="relative w-full overflow-hidden rounded-2xl px-6 py-6 text-center"
+        className="relative w-full overflow-hidden rounded-2xl px-6 py-4 text-center"
         style={{
           background: "linear-gradient(135deg, #FF7A00 0%, #E85D04 100%)",
           boxShadow:
@@ -65,7 +65,7 @@ function Countdown() {
         />
 
         {/* Header */}
-        <div className="relative mb-4 flex items-center justify-center gap-2">
+        <div className="relative mb-2 flex items-center justify-center gap-2">
           <Clock className="h-4 w-4 text-white/90" />
           <span className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.15em] text-white/90">
             OFERTA TERMINA EM:
@@ -94,7 +94,7 @@ function Countdown() {
 
           <span
             className="text-white leading-none mb-6"
-            style={{ fontSize: "clamp(1.5rem, 5vw, 2.2rem)", fontWeight: 900, opacity: 0.9 }}
+            style={{ fontSize: "clamp(1.2rem, 4vw, 1.8rem)", fontWeight: 900, opacity: 0.9 }}
           >
             :
           </span>
@@ -119,7 +119,7 @@ function Countdown() {
 
           <span
             className="text-white leading-none mb-6"
-            style={{ fontSize: "clamp(1.5rem, 5vw, 2.2rem)", fontWeight: 900, opacity: 0.9 }}
+            style={{ fontSize: "clamp(1.2rem, 4vw, 1.8rem)", fontWeight: 900, opacity: 0.9 }}
           >
             :
           </span>
@@ -162,10 +162,10 @@ function Countdown() {
 
 export function OfferCTA() {
   return (
-    <section id="oferta" className="bg-background px-4 py-24 text-foreground">
+    <section id="oferta" className="bg-background px-4 py-8 text-foreground sm:py-10">
       <div className="mx-auto max-w-3xl">
         <div
-          className="relative overflow-hidden rounded-3xl border-2 border-accent/20 bg-card p-4 text-center sm:p-10 md:p-14"
+          className="relative overflow-hidden rounded-3xl border-2 border-accent/20 bg-card p-3 text-center sm:p-6 md:p-8"
           style={{ boxShadow: "var(--shadow-cta)" }}
         >
           <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-accent/10 blur-3xl" />
@@ -176,7 +176,7 @@ export function OfferCTA() {
 
             {/* Price block */}
             <div
-              className="mx-auto mt-2 w-full rounded-2xl px-4 py-6 sm:px-8 sm:py-8"
+              className="mx-auto mt-2 w-full rounded-2xl px-4 py-3 sm:px-6 sm:py-4"
               style={{
                 background: "#FFFFFF",
                 boxShadow:
@@ -199,7 +199,7 @@ export function OfferCTA() {
               </p>
 
               {/* 10x de + preço principal */}
-              <div className="mt-4 flex flex-nowrap items-baseline justify-center gap-2">
+              <div className="mt-2 flex flex-nowrap items-baseline justify-center gap-2">
                 <span
                   className="shrink-0 font-sans text-sm font-semibold"
                   style={{ color: "#9E8FB5" }}
@@ -209,7 +209,7 @@ export function OfferCTA() {
                 <span
                   className="whitespace-nowrap font-display leading-none"
                   style={{
-                    fontSize: "clamp(3.8rem, 13vw, 5.8rem)",
+                    fontSize: "clamp(2.8rem, 9vw, 4.2rem)",
                     fontWeight: 900,
                     color: "#6D1CC3",
                     textShadow: "0 2px 24px rgba(109,28,195,0.22)",
@@ -247,7 +247,7 @@ export function OfferCTA() {
               </p>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-4">
               <CTAButton variant="purple">Quero meu agente de IA agora</CTAButton>
             </div>
 

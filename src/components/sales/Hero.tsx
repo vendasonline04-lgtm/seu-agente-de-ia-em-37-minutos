@@ -1,6 +1,6 @@
 import { CTAButton } from "./CTAButton";
 import heroProduto from "@/assets/meninafelizbloco1.png";
-import logo2 from "@/assets/logo2atual-dark.png";
+import robotMascot from "@/assets/robot-mascot.png";
 
 export function Hero() {
   return (
@@ -13,13 +13,23 @@ export function Hero() {
       }} />
       <div className="relative mx-auto max-w-6xl">
 
-        {/* Logo no topo */}
-        <div className="mb-6 flex items-center justify-center">
+        {/* Logo no topo: robô + texto */}
+        <div className="mb-6 flex items-center justify-center gap-4 sm:gap-6">
           <img
-            src={logo2}
-            alt="Agente de IA do Zero"
-            className="h-32 w-auto object-contain sm:h-40"
+            src={robotMascot}
+            alt="Mascote Agente de IA"
+            className="h-28 w-auto object-contain sm:h-36 drop-shadow-[0_0_25px_rgba(109,28,195,0.6)]"
           />
+          <div className="flex flex-col items-start leading-none">
+            <span className="font-display text-3xl font-bold text-white sm:text-5xl tracking-tight">
+              Agente de IA
+            </span>
+            <span className="mt-2 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.35em] text-white/70 sm:text-sm">
+              <span className="h-px w-4 bg-white/40 sm:w-6" />
+              do Zero
+              <span className="h-px w-4 bg-white/40 sm:w-6" />
+            </span>
+          </div>
         </div>
 
         <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">

@@ -1,4 +1,5 @@
 import { CTAButton } from "./CTAButton";
+
 import heroProduto from "@/assets/meninafelizbloco1.png";
 import robotMascot from "@/assets/robot-mascot.png";
 

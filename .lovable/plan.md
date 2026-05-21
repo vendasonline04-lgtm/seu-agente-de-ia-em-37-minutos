@@ -1,23 +1,16 @@
-## Badges premium sofisticados nos 3 primeiros itens
+## Badges premium visíveis no mobile
 
-Os badges atuais são desenhados em CSS (hexágono com clip-path + ícone lucide) e ficam visualmente pobres. Substituir por imagens PNG geradas em alta qualidade, no mesmo estilo do mock de referência: hexágono dourado 3D, com bisel, brilho interno, estrelas/partículas e ícone central premium.
+Hoje os badges hexagonais dourados (`badge-diamond`, `badge-crown`, `badge-star`) usam `hidden sm:block` em `src/components/sales/Deliverables.tsx`, então somem no mobile — exatamente onde o destaque "produto premium" mais importa.
 
-### Abordagem
+### Mudança
 
-Gerar 3 PNGs com fundo transparente em `src/assets/`:
+Em `src/components/sales/Deliverables.tsx`, nos 3 itens premium:
 
-- `badge-diamond.png` — hexágono dourado 3D com ícone de **diamante** brilhante (item Aula)
-- `badge-crown.png` — hexágono dourado 3D com ícone de **coroa** (item Checklist)
-- `badge-star.png` — hexágono dourado 3D com ícone de **estrela** (item Template)
-
-Estilo unificado: gradiente dourado rico (âmbar/ouro), borda externa em laranja brilhante, bisel interno com luz no topo-esquerda, micro-estrelas/sparkles ao redor, ícone central branco/dourado-claro com glow. Fundo transparente para encaixar sobre o card escuro.
-
-### Mudanças em código
-
-Em `src/components/sales/Deliverables.tsx`:
-- Remover a construção CSS do hexágono (clip-path + lucide).
-- Importar os 3 PNGs e renderizar como `<img>` (~52px) com `drop-shadow` dourado sutil para integrar ao glow do card.
-- Manter o resto inalterado (glow do card, preço com brilho, hierarquia dos 2 últimos itens sem badge).
+1. Remover `hidden sm:block` do `<img>` do badge — ele passa a aparecer em todas as larguras.
+2. Reorganizar o canto direito do card para que **badge fique acima do preço**, ambos alinhados à direita:
+   - Envolver o `<img>` do badge e o `<span>` do preço num wrapper `flex flex-col items-end gap-2 shrink-0`.
+   - Tamanho do badge mantido (~56px) — funciona bem tanto no desktop quanto no mobile do print.
+3. Manter inalterados: glow do card, cor/brilho do preço, e os 2 últimos itens (sem badge, preço sozinho à direita como hoje).
 
 ### Fora do escopo
-Nenhuma outra alteração visual ou de conteúdo.
+Nenhuma outra mudança visual ou de conteúdo.

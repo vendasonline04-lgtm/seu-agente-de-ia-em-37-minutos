@@ -47,27 +47,29 @@ export function Deliverables() {
                   <h3 className="text-lg font-bold">{it.title}</h3>
                   <p className="mt-1 text-white/80">{it.desc}</p>
                 </div>
-                {it.premium && it.badge && (
-                  <img
-                    src={it.badge}
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    width={56}
-                    height={56}
-                    className="hidden h-14 w-14 shrink-0 sm:block"
-                    style={{ filter: "drop-shadow(0 0 10px rgba(255,170,60,0.55))" }}
-                  />
-                )}
-                <span
-                  className={
-                    it.premium
-                      ? "shrink-0 text-lg font-bold text-alert drop-shadow-[0_0_8px_rgba(255,122,0,0.6)]"
-                      : "shrink-0 text-lg font-bold text-alert"
-                  }
-                >
-                  {it.price}
-                </span>
+                <div className="flex shrink-0 flex-col items-end gap-2">
+                  {it.premium && it.badge && (
+                    <img
+                      src={it.badge}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      width={56}
+                      height={56}
+                      className="h-14 w-14"
+                      style={{ filter: "drop-shadow(0 0 10px rgba(255,170,60,0.55))" }}
+                    />
+                  )}
+                  <span
+                    className={
+                      it.premium
+                        ? "text-lg font-bold text-alert drop-shadow-[0_0_8px_rgba(255,122,0,0.6)]"
+                        : "text-lg font-bold text-alert"
+                    }
+                  >
+                    {it.price}
+                  </span>
+                </div>
               </li>
             );
           })}

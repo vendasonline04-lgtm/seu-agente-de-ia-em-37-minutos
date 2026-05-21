@@ -25,16 +25,9 @@ export function Solution() {
           </div>
 
           <p className="mt-3 text-xl font-bold text-white">
-            Agora você pode criar vários agentes sem travar!
+            Agora você pode criar vários agentes sem travar! Essa sensação está a <span className="text-alert">37 minutos</span> de distância.
           </p>
         </div>
-
-        <p className="mt-8 text-lg">
-          Essa sensação está a <span className="font-bold text-alert">37 minutos</span> de distância.
-        </p>
-        <p className="mt-6 text-2xl font-bold">
-          Apresento o Seu Agente de IA do Zero.
-        </p>
       </div>
     </section>
   );

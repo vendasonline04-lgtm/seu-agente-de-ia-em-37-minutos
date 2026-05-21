@@ -1,16 +1,10 @@
-## Badges premium visíveis no mobile
+## Aumentar logo e remover fundo claro
 
-Hoje os badges hexagonais dourados (`badge-diamond`, `badge-crown`, `badge-star`) usam `hidden sm:block` em `src/components/sales/Deliverables.tsx`, então somem no mobile — exatamente onde o destaque "produto premium" mais importa.
+Em `src/components/sales/Hero.tsx`:
 
-### Mudança
+1. **Aumentar tamanho**: trocar `h-20 ... sm:h-24` por `h-32 ... sm:h-40` no `<img>` do logo.
 
-Em `src/components/sales/Deliverables.tsx`, nos 3 itens premium:
-
-1. Remover `hidden sm:block` do `<img>` do badge — ele passa a aparecer em todas as larguras.
-2. Reorganizar o canto direito do card para que **badge fique acima do preço**, ambos alinhados à direita:
-   - Envolver o `<img>` do badge e o `<span>` do preço num wrapper `flex flex-col items-end gap-2 shrink-0`.
-   - Tamanho do badge mantido (~56px) — funciona bem tanto no desktop quanto no mobile do print.
-3. Manter inalterados: glow do card, cor/brilho do preço, e os 2 últimos itens (sem badge, preço sozinho à direita como hoje).
+2. **Fundo igual ao da página**: a imagem `logo2atual.png` tem um retângulo de fundo claro/lavanda que destoa do gradiente roxo do Hero. Vou gerar uma nova versão da logo com fundo transparente usando `imagegen--edit_image` (transparent_background=true), salvando como `src/assets/logo2atual-transparent.png`, e atualizar o import no Hero. Assim o logo fica "flutuando" sobre o gradiente roxo (`#260452 → #531790`) sem caixa visível.
 
 ### Fora do escopo
-Nenhuma outra mudança visual ou de conteúdo.
+Nenhuma outra mudança no Hero ou em outros componentes.

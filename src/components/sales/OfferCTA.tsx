@@ -67,7 +67,7 @@ function Countdown() {
         {/* Header */}
         <div className="relative mb-4 flex items-center justify-center gap-2">
           <Clock className="h-4 w-4 text-white/90" />
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-white/90">
+          <span className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.15em] text-white/90">
             OFERTA TERMINA EM:
           </span>
         </div>
@@ -165,7 +165,7 @@ export function OfferCTA() {
     <section id="oferta" className="bg-background px-4 py-24 text-foreground">
       <div className="mx-auto max-w-3xl">
         <div
-          className="relative overflow-hidden rounded-3xl border-2 border-accent/20 bg-card p-10 text-center sm:p-14"
+          className="relative overflow-hidden rounded-3xl border-2 border-accent/20 bg-card p-4 text-center sm:p-10 md:p-14"
           style={{ boxShadow: "var(--shadow-cta)" }}
         >
           <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-accent/10 blur-3xl" />
@@ -176,7 +176,7 @@ export function OfferCTA() {
 
             {/* Price block */}
             <div
-              className="mx-auto mt-2 w-full max-w-md rounded-2xl px-8 py-8"
+              className="mx-auto mt-2 w-full rounded-2xl px-4 py-6 sm:px-8 sm:py-8"
               style={{
                 background: "#FFFFFF",
                 boxShadow:
@@ -240,7 +240,7 @@ export function OfferCTA() {
 
               {/* À vista */}
               <p
-                className="font-display text-2xl font-bold"
+                className="whitespace-nowrap font-display text-2xl font-bold"
                 style={{ color: "#531790", letterSpacing: "-0.01em" }}
               >
                 R$ 67,00 à vista
@@ -252,7 +252,7 @@ export function OfferCTA() {
             </div>
 
             {/* Trust — linha única, ícone + texto */}
-            <div className="mt-3 flex flex-wrap items-start justify-center gap-x-6 gap-y-2">
+            <div className="mt-3 flex flex-nowrap items-start justify-center gap-x-3 sm:gap-x-6">
               {(
                 [
                   { Icon: Zap,         title: "Acesso imediato",    sub: "Comece agora mesmo"       },
@@ -260,11 +260,11 @@ export function OfferCTA() {
                   { Icon: Diamond,     title: "Acesso vitalício",   sub: "Atualizações para sempre" },
                 ] as const
               ).map(({ Icon, title, sub }) => (
-                <div key={title} className="flex items-center gap-1.5">
-                  <Icon className="h-4 w-4 shrink-0 text-accent" />
+                <div key={title} className="flex items-center gap-1">
+                  <Icon className="h-3 w-3 shrink-0 text-accent sm:h-4 sm:w-4" />
                   <div className="text-left">
-                    <p className="text-xs font-bold leading-tight text-foreground">{title}</p>
-                    <p className="text-[10px] leading-tight text-foreground/50">{sub}</p>
+                    <p className="text-[9px] font-bold leading-tight text-foreground sm:text-xs">{title}</p>
+                    <p className="hidden text-[9px] leading-tight text-foreground/50 sm:block">{sub}</p>
                   </div>
                 </div>
               ))}

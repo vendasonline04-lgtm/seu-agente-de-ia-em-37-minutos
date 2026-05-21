@@ -34,7 +34,7 @@ export function CTAButton({
   return (
     <a
       href={href}
-      className={`relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl px-8 py-5 font-bold uppercase tracking-widest text-white transition-all duration-300 hover:scale-[1.025] hover:brightness-110 active:scale-[0.99] sm:text-lg ${className}`}
+      className={`relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl px-8 py-5 font-bold uppercase tracking-widest text-white transition-all duration-300 hover:scale-[1.025] hover:brightness-110 active:scale-[0.99] sm:text-lg ${isPurple ? "btn-cta-pulse" : ""} ${className}`}
       style={styles[variant]}
     >
       {/* Internal shine — only for purple */}

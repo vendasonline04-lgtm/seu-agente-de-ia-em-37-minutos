@@ -1,6 +1,6 @@
 import { CTAButton } from "./CTAButton";
 import heroProduto from "@/assets/meninafelizbloco1.png";
-import logo from "@/assets/logo-icon.png";
+import logo2 from "@/assets/logo2atual.png";
 
 export function Hero() {
   return (
@@ -14,16 +14,12 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl">
 
         {/* Logo no topo */}
-        <div className="mb-6 flex items-center justify-center gap-0">
+        <div className="mb-6 flex items-center justify-center">
           <img
-            src={logo}
-            alt="Agente de IA do Zero — Simplifica-AI"
+            src={logo2}
+            alt="Agente de IA do Zero"
             className="h-20 w-auto object-contain sm:h-24"
           />
-          <div className="-ml-3 flex flex-col items-center text-base font-bold leading-tight text-white sm:-ml-4 sm:text-lg">
-            <span>Agente de IA</span>
-            <span>do Zero</span>
-          </div>
         </div>
 
         <div className="flex flex-col items-center gap-12 md:flex-row md:items-center md:gap-16">

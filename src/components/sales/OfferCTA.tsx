@@ -144,9 +144,9 @@ function Countdown() {
         </div>
       </div>
 
-      {/* 85% OFF badge */}
+      {/* 85% OFF badge — sobreposto ao cronômetro */}
       <div
-        className="inline-flex items-center gap-2 rounded-xl px-7 py-2.5"
+        className="inline-flex items-center gap-2 rounded-xl px-7 py-2.5 -mt-5 relative z-10"
         style={{
           background: "linear-gradient(135deg, #FFD700 0%, #FFA500 100%)",
           boxShadow: "0 4px 18px rgba(255,165,0,0.45), 0 1px 0 rgba(255,255,255,0.3) inset",

@@ -18,20 +18,20 @@ const items = [
 export function Deliverables() {
   return (
     <section className="bg-primary px-4 py-20 text-primary-foreground">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-5xl">
         <h2 className="text-balance text-center text-2xl font-bold sm:text-3xl">
           Veja tudo que você vai receber para criar o seu agente em 37 minutos:
         </h2>
 
-        <ul className="mt-12 space-y-5">
+        <ul className="mt-12 space-y-4">
           {items.map((it, i) => {
             return (
               <li
                 key={i}
                 className={
                   it.premium
-                    ? "relative flex items-center gap-4 rounded-xl bg-gradient-to-br from-white/[0.09] to-white/[0.03] p-5 ring-1 ring-amber-400/40 backdrop-blur"
-                    : "flex items-center gap-4 rounded-xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur"
+                    ? "relative flex items-center gap-4 rounded-xl bg-gradient-to-br from-white/[0.09] to-white/[0.03] p-4 ring-1 ring-amber-400/40 backdrop-blur"
+                    : "flex items-center gap-4 rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur"
                 }
                 style={
                   it.premium
@@ -42,29 +42,29 @@ export function Deliverables() {
                     : undefined
                 }
               >
-                <img src={it.icon} alt={it.title} className="h-12 w-12 shrink-0 rounded-full object-cover" />
+                <img src={it.icon} alt={it.title} className="h-10 w-10 shrink-0 rounded-full object-cover sm:h-12 sm:w-12" />
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold">{it.title}</h3>
-                  <p className="mt-1 text-white/80">{it.desc}</p>
+                  <h3 className="text-sm font-bold sm:text-base">{it.title}</h3>
+                  <p className="mt-0.5 text-sm text-white/80">{it.desc}</p>
                 </div>
-                <div className="flex shrink-0 flex-col items-end gap-2">
+                <div className="flex w-20 shrink-0 flex-col items-end gap-1 sm:w-24">
                   {it.premium && it.badge && (
                     <img
                       src={it.badge}
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
-                      width={56}
-                      height={56}
-                      className="h-14 w-14"
-                      style={{ filter: "drop-shadow(0 0 10px rgba(255,170,60,0.55))" }}
+                      width={40}
+                      height={40}
+                      className="h-10 w-10"
+                      style={{ filter: "drop-shadow(0 0 8px rgba(255,170,60,0.55))" }}
                     />
                   )}
                   <span
                     className={
                       it.premium
-                        ? "text-lg font-bold text-alert drop-shadow-[0_0_8px_rgba(255,122,0,0.6)]"
-                        : "text-lg font-bold text-alert"
+                        ? "text-base font-bold text-alert drop-shadow-[0_0_8px_rgba(255,122,0,0.6)]"
+                        : "text-base font-bold text-alert"
                     }
                   >
                     {it.price}

@@ -6,7 +6,7 @@ const items = [
   "Vê outras pessoas ganhando dinheiro com agentes enquanto você ainda está no conteúdo",
   "Quer criar algo real, mas quando vai ver já não sabe mais que ordem seguir",
   "Está cansada de consumir um monte de conteúdo e fica só perdendo o foco",
-  "Perde tempo e dinheiro à toda por não saber usar IA",
+  "Perde tempo e dinheiro à toa por não saber usar IA. Faz uso de ferramentas confusas com prompts ruins.",
   "Faz tarefas repetitivas e precisa ganhar tempo, para focar no que realmente importa",
   "Vê o seu tempo sendo consumido à toa, por algo que você podia programar pra fazer no seu lugar...",
 ];

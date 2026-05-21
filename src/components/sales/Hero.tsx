@@ -21,10 +21,10 @@ export function Hero() {
             className="h-14 w-auto object-contain sm:h-18 drop-shadow-[0_0_25px_rgba(109,28,195,0.6)]"
           />
           <div className="flex flex-col items-center leading-none">
-            <span className="font-display text-xl font-bold text-white sm:text-3xl tracking-tight">
+            <span className="font-display text-base font-bold text-white sm:text-xl tracking-tight">
               Agente de IA
             </span>
-            <span className="mt-1.5 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.35em] text-white/70 sm:text-xs">
+            <span className="mt-1 flex items-center gap-1.5 text-[8px] font-medium uppercase tracking-[0.3em] text-white/70 sm:text-[10px]">
               <span className="h-px w-3 bg-white/40 sm:w-5" />
               do Zero
               <span className="h-px w-3 bg-white/40 sm:w-5" />

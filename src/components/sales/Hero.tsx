@@ -14,20 +14,20 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl">
 
         {/* Logo no topo: robô + texto */}
-        <div className="mb-6 flex items-center justify-center gap-4 sm:gap-6">
+        <div className="mb-6 flex items-center justify-center gap-2 sm:gap-3">
           <img
             src={robotMascot}
             alt="Mascote Agente de IA"
-            className="h-28 w-auto object-contain sm:h-36 drop-shadow-[0_0_25px_rgba(109,28,195,0.6)]"
+            className="h-14 w-auto object-contain sm:h-18 drop-shadow-[0_0_25px_rgba(109,28,195,0.6)]"
           />
-          <div className="flex flex-col items-start leading-none">
-            <span className="font-display text-3xl font-bold text-white sm:text-5xl tracking-tight">
+          <div className="flex flex-col items-center leading-none">
+            <span className="font-display text-xl font-bold text-white sm:text-3xl tracking-tight">
               Agente de IA
             </span>
-            <span className="mt-2 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.35em] text-white/70 sm:text-sm">
-              <span className="h-px w-4 bg-white/40 sm:w-6" />
+            <span className="mt-1.5 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.35em] text-white/70 sm:text-xs">
+              <span className="h-px w-3 bg-white/40 sm:w-5" />
               do Zero
-              <span className="h-px w-4 bg-white/40 sm:w-6" />
+              <span className="h-px w-3 bg-white/40 sm:w-5" />
             </span>
           </div>
         </div>

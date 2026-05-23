@@ -51,7 +51,7 @@ function SalesPage() {
     <main>
       <UrgencyBar />
       <Hero />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ProblemCycle />
       <Solution />
       <FourSteps />

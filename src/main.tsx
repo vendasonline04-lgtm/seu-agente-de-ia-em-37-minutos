@@ -27,13 +27,13 @@ function App() {
       <Solution />
       <FourSteps />
       <Deliverables />
+      <Recap />
       <ForWho />
       <ValueStack />
       <OfferCTA />
       <Urgency />
       <OfferCTA />
       {/* <Guarantee /> */}
-      <Recap />
       <FAQ />
       <Footer />
     </main>

@@ -31,7 +31,7 @@ function App() {
       <ValueStack />
       <OfferCTA />
       <Urgency />
-      <Guarantee />
+      {/* <Guarantee /> */}
       <Recap />
       <FAQ />
       <Footer />

@@ -72,7 +72,7 @@ export function Deliverables() {
                 <img
                   src={it.image}
                   alt={it.title}
-                  className="w-2/5 shrink-0 object-cover"
+                  className="w-2/5 shrink-0 object-cover rounded-xl"
                 />
               )}
               <div
@@ -89,7 +89,7 @@ export function Deliverables() {
                 <img
                   src={it.image}
                   alt={it.title}
-                  className="w-2/5 shrink-0 object-cover"
+                  className="w-2/5 shrink-0 object-cover rounded-xl"
                 />
               )}
             </li>

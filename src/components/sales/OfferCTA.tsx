@@ -325,15 +325,12 @@ export function OfferCTA2() {
               <img
                 src={propack}
                 alt="Pacote Agente de IA em 37 minutos"
-                className="w-full max-w-[260px] object-contain drop-shadow-2xl"
+                className="w-full max-w-[260px] rounded-2xl object-contain drop-shadow-2xl"
               />
             </div>
 
-            <div className="flex flex-1 flex-col justify-center p-6 sm:p-8">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent/70">
-                Oferta completa
-              </p>
-              <h3 className="mt-1 text-xl font-black leading-tight sm:text-2xl text-foreground">
+            <div className="flex flex-1 flex-col items-center text-center p-6 sm:p-8">
+              <h3 className="text-xl font-black leading-tight sm:text-2xl text-foreground">
                 Agente de IA em 37 Minutos
               </h3>
 
@@ -359,18 +356,15 @@ export function OfferCTA2() {
                 ou <span className="font-bold text-foreground/80">R$ 67,00 à vista</span>
               </p>
 
-              <div className="mt-5">
+              <div className="mt-5 w-full">
                 <CTAButton variant="orange" className="text-base text-center">
                   Quero meu agente de IA agora
                 </CTAButton>
               </div>
 
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+              <div className="mt-4 flex items-center justify-center gap-4">
                 <span className="flex items-center gap-1.5 text-[11px] font-semibold text-foreground/50">
                   <ShieldCheck className="h-3.5 w-3.5 text-accent" /> Compra Segura
-                </span>
-                <span className="flex items-center gap-1.5 text-[11px] font-semibold text-foreground/50">
-                  <Star className="h-3.5 w-3.5 text-accent" /> Satisfação Garantida
                 </span>
                 <span className="flex items-center gap-1.5 text-[11px] font-semibold text-foreground/50">
                   <Lock className="h-3.5 w-3.5 text-accent" /> Privacidade Protegida

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CTAButton } from "./CTAButton";
-import { Zap, ShieldCheck, Clock, Diamond, Lock, Star, Mail, Download } from "lucide-react";
+import { Zap, ShieldCheck, Clock, Diamond, Lock, Star, Mail, Download, PlayCircle } from "lucide-react";
 import propack from "@/assets/propack.png";
 
 function Countdown() {
@@ -362,23 +362,32 @@ export function OfferCTA2() {
                 </CTAButton>
               </div>
 
-              <div className="mt-4 flex items-center justify-center">
+              <div className="mt-4 flex items-center justify-center gap-4">
                 <span className="flex items-center gap-1.5 text-[11px] font-semibold text-foreground/50">
                   <ShieldCheck className="h-3.5 w-3.5 text-accent" /> Compra Segura
                 </span>
+                <span className="flex items-center gap-1.5 text-[11px] font-semibold text-foreground/50">
+                  <Lock className="h-3.5 w-3.5 text-accent" /> Privacidade Protegida
+                </span>
               </div>
 
-              <div className="mt-3 grid grid-cols-2 gap-3 w-full">
-                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-3 py-4 text-center">
+              <div className="mt-3 grid grid-cols-3 gap-2 w-full">
+                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-2 py-4 text-center">
                   <Mail className="h-6 w-6 text-accent" />
-                  <p className="text-[11px] font-semibold leading-snug text-foreground/70">
-                    Receba seu acesso direto no e-mail
+                  <p className="text-[10px] font-semibold leading-snug text-foreground/70">
+                    Receba seu acesso por email
                   </p>
                 </div>
-                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-3 py-4 text-center">
+                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-2 py-4 text-center">
                   <Download className="h-6 w-6 text-accent" />
-                  <p className="text-[11px] font-semibold leading-snug text-foreground/70">
-                    Baixe o checklist e comece agora
+                  <p className="text-[10px] font-semibold leading-snug text-foreground/70">
+                    Baixe os materiais
+                  </p>
+                </div>
+                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-2 py-4 text-center">
+                  <PlayCircle className="h-6 w-6 text-accent" />
+                  <p className="text-[10px] font-semibold leading-snug text-foreground/70">
+                    Agora é só assistir a aula!
                   </p>
                 </div>
               </div>

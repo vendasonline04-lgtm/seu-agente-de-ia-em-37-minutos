@@ -8,11 +8,10 @@ import { FourSteps } from "@/components/sales/FourSteps";
 import { Deliverables } from "@/components/sales/Deliverables";
 import { ForWho } from "@/components/sales/ForWho";
 import { ValueStack } from "@/components/sales/ValueStack";
-import { OfferCTA } from "@/components/sales/OfferCTA";
+import { OfferCTA, OfferCTA2 } from "@/components/sales/OfferCTA";
 import { Urgency } from "@/components/sales/Urgency";
 import { Guarantee } from "@/components/sales/Guarantee";
 import { Recap } from "@/components/sales/Recap";
-import { OfferCTA2 } from "@/components/sales/OfferCTA2";
 import { FAQ } from "@/components/sales/FAQ";
 import { Footer } from "@/components/sales/Footer";
 

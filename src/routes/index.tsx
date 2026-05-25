@@ -12,6 +12,7 @@ import { OfferCTA } from "@/components/sales/OfferCTA";
 import { Urgency } from "@/components/sales/Urgency";
 import { Guarantee } from "@/components/sales/Guarantee";
 import { Recap } from "@/components/sales/Recap";
+import { OfferCTA2 } from "@/components/sales/OfferCTA2";
 import { FAQ } from "@/components/sales/FAQ";
 import { Footer } from "@/components/sales/Footer";
 
@@ -62,6 +63,7 @@ function SalesPage() {
       <Urgency />
       <Guarantee />
       <Recap />
+      <OfferCTA2 />
       <FAQ />
       <Footer />
     </main>

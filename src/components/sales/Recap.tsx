@@ -31,10 +31,10 @@ export function Recap() {
 
         <div className="mx-auto mt-4 max-w-xl flex items-center gap-3 rounded-lg px-4 py-2">
           <span className="flex h-6 w-6 shrink-0" />
-          <span className="flex-1 text-left text-lg font-bold text-alert">
+          <span className="flex-1 text-left text-xl font-bold text-alert">
             Tudo isso você pagaria um total de:
           </span>
-          <span className="shrink-0 text-lg font-bold text-alert">R$ 445</span>
+          <span className="shrink-0 text-xl font-bold text-alert">R$ 445</span>
         </div>
       </div>
     </section>

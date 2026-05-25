@@ -1,5 +1,3 @@
-import { Zap, ShieldCheck } from "lucide-react";
-import { CTAButton } from "./CTAButton";
 
 const items = [
   { label: "Aula de 37 minutos: do zero ao agente rodando", price: "R$ 197" },
@@ -31,36 +29,12 @@ export function Recap() {
           ))}
         </ul>
 
-        <p className="mt-10 text-xl">
-          De <span className="line-through opacity-70">R$ 445</span> por apenas
-        </p>
-
-        {/* Preço com parcelamento em destaque */}
-        <div className="mt-3 flex flex-col items-center gap-1">
-          <div className="relative flex items-baseline gap-1">
-            <span className="absolute left-0 right-0 -top-5 text-center text-sm font-semibold text-white/60">10x de</span>
-            <span className="font-display text-5xl font-bold leading-none text-alert">
-              R$ 8,12
-            </span>
-          </div>
-          <span className="text-base font-semibold text-white/60">OU</span>
-          <span className="text-xl font-bold text-white/80">R$ 67,00 à vista</span>
-        </div>
-
-        <div className="mt-8">
-          <CTAButton>Preciso de um agente de IA urgente</CTAButton>
-        </div>
-
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm font-semibold">
-          <span className="inline-flex items-center gap-2 text-alert">
-            <Zap className="h-4 w-4" /> Acesso Imediato
+        <div className="mx-auto mt-4 max-w-xl flex items-center gap-3 rounded-lg px-4 py-2">
+          <span className="flex h-6 w-6 shrink-0" />
+          <span className="flex-1 text-left text-lg font-bold text-alert">
+            Tudo isso custaria um total de
           </span>
-          <span className="inline-flex items-center gap-2 text-alert">
-            <ShieldCheck className="h-4 w-4" /> Garantia de 7 dias
-          </span>
-          <span className="inline-flex items-center gap-2 text-alert">
-            Acesso Vitalício
-          </span>
+          <span className="shrink-0 text-lg font-bold text-alert">R$ 445</span>
         </div>
       </div>
     </section>

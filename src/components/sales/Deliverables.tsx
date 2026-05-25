@@ -82,8 +82,8 @@ export function Deliverables() {
                     : "bg-white/5"
                 }`}
               >
-                <h3 className="text-sm font-bold sm:text-base">{it.title}</h3>
-                <p className="mt-1 text-sm text-white/80">{it.desc}</p>
+                <h3 className="text-base font-bold sm:text-xl">{it.title}</h3>
+                <p className="mt-2 text-base text-white/80 sm:text-lg">{it.desc}</p>
               </div>
               {it.imagePosition === "right" && (
                 <img
@@ -96,11 +96,6 @@ export function Deliverables() {
           ))}
         </ul>
 
-        <div className="mt-4 flex justify-end pr-1">
-          <span className="text-xl font-bold text-alert sm:text-2xl">
-            Tudo isso você pagaria um total de: R$ 445
-          </span>
-        </div>
       </div>
     </section>
   );

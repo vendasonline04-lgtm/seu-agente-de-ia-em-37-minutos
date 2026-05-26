@@ -34,6 +34,7 @@ function App() {
       <OfferCTA2 />
       <Urgency />
       {/* <Guarantee /> */}
+      <OfferCTA2 />
       <FAQ />
       <Footer />
     </main>

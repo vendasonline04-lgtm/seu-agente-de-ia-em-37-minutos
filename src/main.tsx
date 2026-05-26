@@ -30,10 +30,10 @@ function App() {
       <Recap />
       <ForWho />
       <ValueStack />
-      <OfferCTA />
+      {/* <OfferCTA /> */}
+      <OfferCTA2 />
       <Urgency />
       {/* <Guarantee /> */}
-      <OfferCTA2 />
       <FAQ />
       <Footer />
     </main>

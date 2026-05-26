@@ -27,8 +27,8 @@ function App() {
       <Solution />
       <FourSteps />
       <Deliverables />
-      <Recap />
       <ForWho />
+      <Recap />
       <ValueStack />
       {/* <OfferCTA /> */}
       <OfferCTA2 />

@@ -12,7 +12,7 @@ export function Recap() {
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold sm:text-4xl">
-          Tudo que você recebe por R$ 67:
+          Recapitulando, veja tudo que você vai receber:
         </h2>
 
         <ul className="mx-auto mt-10 max-w-xl space-y-3 text-left">

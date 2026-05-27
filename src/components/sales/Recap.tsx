@@ -34,7 +34,7 @@ export function Recap() {
           <span className="flex-1 text-left text-xl font-bold text-alert">
             Tudo isso você pagaria um total de:
           </span>
-          <span className="shrink-0 text-xl font-bold text-alert">R$ 445</span>
+          <span className="shrink-0 text-4xl font-bold text-alert line-through">R$ 445</span>
         </div>
       </div>
     </section>

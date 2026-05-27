@@ -47,7 +47,7 @@ export function ForWho() {
         </div>
 
         <p className="mt-8 text-center text-base font-semibold text-primary sm:text-lg">
-          Se você se reconheceu em algum desses pontos, esse produto é para você.
+          Se você se reconheceu em algum desses pontos, o Agente de IA do Zero em 37 minutos é para você!
         </p>
       </div>
     </section>

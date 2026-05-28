@@ -1,4 +1,4 @@
-import heroProduto from "@/assets/antesedepoismenina.png";
+import heroProduto from "@/assets/mulherrealista.png";
 import robotMascot from "@/assets/robot-mascot.png";
 
 export function Hero() {

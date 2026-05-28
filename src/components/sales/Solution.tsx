@@ -10,7 +10,7 @@ export function Solution() {
               src={exclamacao}
               alt="Atenção"
               className="w-44 sm:w-60"
-              style={{ filter: "hue-rotate(-35deg) saturate(1.3)" }}
+              style={{ filter: "hue-rotate(-28deg) saturate(0.88) brightness(0.94)" }}
             />
           </div>
           <div className="flex flex-col items-center gap-4">

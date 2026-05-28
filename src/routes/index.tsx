@@ -9,6 +9,7 @@ import { Deliverables } from "@/components/sales/Deliverables";
 import { ForWho } from "@/components/sales/ForWho";
 import { ValueStack } from "@/components/sales/ValueStack";
 import { OfferCTA, OfferCTA2 } from "@/components/sales/OfferCTA";
+import { DeliverySteps } from "@/components/sales/DeliverySteps";
 import { Urgency } from "@/components/sales/Urgency";
 import { Guarantee } from "@/components/sales/Guarantee";
 import { Recap } from "@/components/sales/Recap";
@@ -59,6 +60,7 @@ function SalesPage() {
       <ForWho />
       <ValueStack />
       <OfferCTA />
+      <DeliverySteps />
       <Urgency />
       <Guarantee />
       <Recap />

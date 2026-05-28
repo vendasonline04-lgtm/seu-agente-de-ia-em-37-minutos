@@ -1,7 +1,7 @@
 import procomputador from "@/assets/procomputador.png";
 import prochecklist from "@/assets/prochecklist.png";
 import propromt from "@/assets/propromt.png";
-import proferramentas from "@/assets/proferramentas.png";
+import proferramentas from "@/assets/logodasferramentas.png";
 import proagente from "@/assets/proagente.png";
 
 const items = [

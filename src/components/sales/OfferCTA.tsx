@@ -345,7 +345,7 @@ export function OfferCTA2() {
               <div className="mt-1 flex items-baseline gap-2">
                 <span className="text-sm font-semibold text-foreground/40">10x de</span>
                 <span
-                  className="font-black leading-none text-alert"
+                  className="font-black leading-none text-green-500"
                   style={{ fontSize: "clamp(2rem, 8vw, 3rem)" }}
                 >
                   R$ 8,12

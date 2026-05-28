@@ -15,8 +15,8 @@ export function CTAButton({
 }: CTAButtonProps) {
   const styles: Record<string, React.CSSProperties> = {
     orange: {
-      background: "linear-gradient(135deg, #FF7A00 0%, #E56A00 100%)",
-      boxShadow: "0 20px 60px -15px rgba(255, 122, 0, 0.55)",
+      background: "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
+      boxShadow: "0 20px 60px -15px rgba(34, 197, 94, 0.55)",
     },
     purple: {
       background: "linear-gradient(145deg, #7B2CF5 0%, #5A1AB8 55%, #4A148C 100%)",
@@ -24,8 +24,8 @@ export function CTAButton({
         "0 0 0 1px rgba(123,44,245,0.2), 0 0 40px rgba(123,44,245,0.45), 0 12px 40px rgba(74,20,140,0.5)",
     },
     default: {
-      background: "linear-gradient(135deg, #FF7A00 0%, #E56A00 100%)",
-      boxShadow: "0 20px 60px -15px rgba(255, 122, 0, 0.55)",
+      background: "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
+      boxShadow: "0 20px 60px -15px rgba(34, 197, 94, 0.55)",
     },
   };
 

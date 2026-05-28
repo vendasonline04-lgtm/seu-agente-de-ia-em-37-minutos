@@ -8,39 +8,31 @@ const items = [
 
 export function Recap() {
   return (
-    <section>
-      {/* Cabeçalho roxo */}
-      <div className="bg-secondary px-4 py-14 text-center text-white">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            Recapitulando, veja tudo que você vai receber:
-          </h2>
-        </div>
-      </div>
+    <section className="bg-secondary px-4 py-14 text-white">
+      <div className="mx-auto max-w-3xl text-center">
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Recapitulando, veja tudo que você vai receber:
+        </h2>
 
-      {/* Corpo com fundo branco */}
-      <div className="bg-background px-4 py-14">
-        <div className="mx-auto max-w-3xl">
-          <ul className="mx-auto max-w-xl space-y-3 text-left">
-            {items.map((it, i) => (
-              <li key={i} className="flex items-center gap-3 rounded-lg bg-muted/60 p-4 ring-1 ring-border">
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-500">
-                  <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
-                    <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
-                <span className="flex-1 text-lg text-foreground">{it.label}</span>
-                <span className="shrink-0 font-bold text-alert line-through">{it.price}</span>
-              </li>
-            ))}
-          </ul>
+        <ul className="mx-auto mt-10 max-w-xl space-y-3 text-left">
+          {items.map((it, i) => (
+            <li key={i} className="flex items-center gap-3 rounded-lg bg-white p-4">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-500">
+                <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
+                  <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+              <span className="flex-1 text-lg text-foreground">{it.label}</span>
+              <span className="shrink-0 font-bold text-red-600 line-through">{it.price}</span>
+            </li>
+          ))}
+        </ul>
 
-          <div className="mx-auto mt-4 max-w-xl rounded-xl border-2 border-alert/40 bg-muted/60 px-6 py-5 text-center">
-            <p className="text-base font-semibold text-foreground sm:text-lg">
-              Tudo isso você pagaria um total de:
-            </p>
-            <p className="mt-1 text-4xl font-extrabold text-alert line-through">R$ 445</p>
-          </div>
+        <div className="mx-auto mt-4 max-w-xl rounded-xl border-2 border-white/30 bg-white px-6 py-5 text-center">
+          <p className="text-base font-semibold text-foreground sm:text-lg">
+            Tudo isso você pagaria um total de:
+          </p>
+          <p className="mt-1 text-4xl font-extrabold text-red-600 line-through">R$ 445</p>
         </div>
       </div>
     </section>

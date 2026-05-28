@@ -30,9 +30,9 @@ export function Recap() {
 
         <div className="mx-auto mt-4 max-w-xl rounded-xl border-2 border-white/30 bg-white px-6 py-5 text-center">
           <p className="text-base font-semibold text-foreground sm:text-lg">
-            Tudo isso você pagaria um total de:
+            Tudo isso você pagaria um total de:{" "}
+            <span className="text-4xl font-extrabold text-red-600 line-through">R$ 445</span>
           </p>
-          <p className="mt-1 text-4xl font-extrabold text-red-600 line-through">R$ 445</p>
         </div>
       </div>
     </section>

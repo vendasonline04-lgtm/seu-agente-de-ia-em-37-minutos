@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CTAButton } from "./CTAButton";
 import { Zap, ShieldCheck, Clock, Diamond, Lock, Star, Mail, Download, PlayCircle } from "lucide-react";
+import propack from "@/assets/propack.png";
 
 function DeliverySteps() {
   return (
@@ -27,7 +28,6 @@ function DeliverySteps() {
     </section>
   );
 }
-import propack from "@/assets/propack.png";
 
 function Countdown() {
   const [time, setTime] = useState({ h: 0, m: 30, s: 0 });

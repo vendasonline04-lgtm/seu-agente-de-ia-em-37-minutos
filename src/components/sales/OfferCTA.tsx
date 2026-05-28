@@ -1,6 +1,32 @@
 import { useEffect, useState } from "react";
 import { CTAButton } from "./CTAButton";
 import { Zap, ShieldCheck, Clock, Diamond, Lock, Star, Mail, Download, PlayCircle } from "lucide-react";
+
+function DeliverySteps() {
+  return (
+    <section className="bg-secondary px-4 py-16 text-white">
+      <div className="mx-auto max-w-3xl text-center">
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Compre agora e você vai receber tudo no seu email
+        </h2>
+        <div className="mt-10 grid grid-cols-3 gap-4">
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center">
+            <Mail className="h-8 w-8 text-accent" />
+            <p className="text-sm font-semibold leading-snug text-foreground">Receba seu acesso por email</p>
+          </div>
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center">
+            <Download className="h-8 w-8 text-accent" />
+            <p className="text-sm font-semibold leading-snug text-foreground">Baixe os materiais</p>
+          </div>
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center">
+            <PlayCircle className="h-8 w-8 text-accent" />
+            <p className="text-sm font-semibold leading-snug text-foreground">Agora é só assistir a aula!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 import propack from "@/assets/propack.png";
 
 function Countdown() {
@@ -163,6 +189,7 @@ function Countdown() {
 
 export function OfferCTA() {
   return (
+    <>
     <section id="oferta" className="bg-background px-4 py-8 text-foreground sm:py-10">
       <div className="mx-auto max-w-3xl">
         <div
@@ -306,6 +333,8 @@ export function OfferCTA() {
         </div>
       </div>
     </section>
+    <DeliverySteps />
+    </>
   );
 }
 

@@ -54,7 +54,7 @@ export function Deliverables() {
           {items.map((it, i) => (
             <li
               key={i}
-              className="flex items-stretch rounded-xl overflow-hidden min-h-[220px] bg-muted/60"
+              className="flex items-stretch rounded-xl overflow-hidden min-h-[220px] bg-background"
             >
               {it.imagePosition === "left" && (
                 <img

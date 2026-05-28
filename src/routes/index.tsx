@@ -14,6 +14,7 @@ import { Guarantee } from "@/components/sales/Guarantee";
 import { Recap } from "@/components/sales/Recap";
 import { FAQ } from "@/components/sales/FAQ";
 import { Footer } from "@/components/sales/Footer";
+import { DeliverySteps } from "@/components/sales/DeliverySteps";
 
 export const Route = createFileRoute("/")(
   {
@@ -59,6 +60,7 @@ function SalesPage() {
       <ForWho />
       <ValueStack />
       <OfferCTA />
+      <DeliverySteps />
       <Urgency />
       <Guarantee />
       <Recap />

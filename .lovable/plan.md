@@ -1,9 +1,24 @@
-A imagem mostra a tela "Publish or update your Lovable project for it to appear here" — isso é a URL **publicada**, não a preview. Significa que o projeto ainda não foi publicado (ou precisa de update após mudanças recentes).
+## Inserir bloco "Compre agora e você vai receber tudo no seu email"
 
-## O que fazer
+O componente `DeliverySteps` já existe em `src/components/sales/DeliverySteps.tsx` com exatamente o conteúdo pedido (headline, 3 ícones Mail/Download/PlayCircle, fundo `bg-secondary` roxo igual ao Recap, fonte/cor da headline igual). Ele só não está sendo renderizado.
 
-1. Verificar se a preview (`/`) carrega normalmente no editor — abrir o sandbox e confirmar.
-2. Se a preview funcionar: orientar o usuário a clicar em **Publish / Update** no canto superior direito para que a versão publicada reflita as últimas alterações (inclusive a remoção do bloco de depoimentos).
-3. Se a preview também estiver quebrada: ler logs do console/build, identificar o erro e corrigir.
+## Mudanças
 
-Nenhuma alteração de código será feita até confirmar qual dos dois cenários é o real.
+**`src/main.tsx`** — importar `DeliverySteps` e inseri-lo entre `<OfferCTA2 />` (bloco da oferta) e `<Urgency />` (bloco "Deixa eu ser direta com você").
+
+Ordem atual relevante:
+```
+<OfferCTA2 />
+<Urgency />   ← "Deixa eu ser direta com você"
+```
+
+Nova ordem:
+```
+<OfferCTA2 />
+<DeliverySteps />   ← novo bloco
+<Urgency />
+```
+
+**`src/routes/index.tsx`** — fazer o mesmo ajuste para manter as duas entradas (main.tsx e rota) consistentes. Inserir `<DeliverySteps />` logo após `<OfferCTA />` / antes de `<Urgency />`.
+
+Nenhuma alteração de estilo é necessária — o componente já usa `bg-secondary` (mesmo roxo do Recap) e a headline já está com `text-3xl font-bold sm:text-4xl` em branco, idêntica à do Recap.

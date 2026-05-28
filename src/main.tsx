@@ -16,6 +16,7 @@ import { Guarantee } from '@/components/sales/Guarantee'
 import { Recap } from '@/components/sales/Recap'
 import { FAQ } from '@/components/sales/FAQ'
 import { Footer } from '@/components/sales/Footer'
+import { DeliverySteps } from '@/components/sales/DeliverySteps'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <ValueStack />
       {/* <OfferCTA /> */}
       <OfferCTA2 />
+      <DeliverySteps />
       <Urgency />
       {/* <Guarantee /> */}
       <OfferCTA2 />

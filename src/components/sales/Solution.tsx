@@ -4,15 +4,16 @@ export function Solution() {
   return (
     <section className="bg-secondary px-4 py-20 text-secondary-foreground">
       <div className="mx-auto max-w-3xl">
-        <div className="flex items-center gap-6 rounded-2xl bg-white p-8 text-left">
+        <div className="flex items-center gap-6 rounded-2xl bg-white p-8 text-center">
           <div className="shrink-0">
             <img
               src={exclamacao}
               alt="Atenção"
               className="w-44 sm:w-60"
+              style={{ filter: "hue-rotate(-35deg) saturate(1.3)" }}
             />
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center gap-4">
             <p className="text-xl text-foreground sm:text-2xl font-bold">
               O problema não é falta de informação, é informação demais...
             </p>

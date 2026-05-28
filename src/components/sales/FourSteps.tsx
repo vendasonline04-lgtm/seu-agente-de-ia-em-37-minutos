@@ -17,10 +17,7 @@ function StepCard({ n, title, desc, icon }: { n: string; title: string; desc: st
       className="group relative flex-1 rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1"
       style={{ boxShadow: "var(--shadow-card)" }}
     >
-      <div className="flex items-center gap-3">
-        <div className="font-display text-5xl font-bold text-accent/20">{n}</div>
-        <img src={icon} alt="" aria-hidden="true" className="h-12 w-12 object-contain" />
-      </div>
+      <img src={icon} alt="" aria-hidden="true" className="h-12 w-12 object-contain" />
       <h3 className="mt-3 text-xl font-bold text-primary">
         Passo {parseInt(n)} → {title}
       </h3>

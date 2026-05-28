@@ -1,4 +1,25 @@
-import exclamacao from "@/assets/exclamacao.png";
+function WarningIcon({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 112" className={className} aria-hidden="true">
+      {/* Sombra do triângulo */}
+      <polygon points="60,6 116,104 4,104" fill="#C89000" opacity="0.5" />
+      {/* Face principal amarela */}
+      <polygon points="60,10 112,102 8,102" fill="#FFD000" />
+      {/* Face lateral esquerda (3D) */}
+      <polygon points="60,10 8,102 20,102 60,22" fill="#FFE033" />
+      {/* Face superior (brilho) */}
+      <polygon points="60,10 60,22 112,102 104,102" fill="#FFC200" />
+      {/* Borda do triângulo */}
+      <polygon points="60,6 116,104 4,104" fill="none" stroke="#E6A800" strokeWidth="2.5" strokeLinejoin="round" />
+      {/* Reflexo/brilho no topo */}
+      <polygon points="60,18 80,54 40,54" fill="white" opacity="0.18" />
+      {/* Exclamação — corpo */}
+      <rect x="54.5" y="42" width="11" height="30" rx="5.5" fill="#111111" />
+      {/* Exclamação — ponto */}
+      <circle cx="60" cy="84" r="6.5" fill="#111111" />
+    </svg>
+  );
+}
 
 export function Solution() {
   return (
@@ -6,12 +27,7 @@ export function Solution() {
       <div className="mx-auto max-w-3xl">
         <div className="flex items-center gap-6 rounded-2xl bg-white p-8 text-center">
           <div className="shrink-0">
-            <img
-              src={exclamacao}
-              alt="Atenção"
-              className="w-44 sm:w-60"
-              style={{ filter: "hue-rotate(-28deg) saturate(0.88) brightness(0.94)" }}
-            />
+            <WarningIcon className="w-44 sm:w-60" />
           </div>
           <div className="flex flex-col items-center gap-4">
             <p className="text-base text-foreground sm:text-lg font-bold">

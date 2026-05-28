@@ -14,10 +14,10 @@ export function Solution() {
             />
           </div>
           <div className="flex flex-col items-center gap-4">
-            <p className="text-xl text-foreground sm:text-2xl font-bold">
+            <p className="text-base text-foreground sm:text-lg font-bold">
               O problema não é falta de informação, é informação demais...
             </p>
-            <h2 className="text-balance text-3xl font-bold leading-tight text-foreground sm:text-4xl md:text-5xl">
+            <h2 className="text-balance text-xl font-bold leading-tight text-foreground sm:text-2xl md:text-3xl">
               E se eu te dissesse que você pode ter um <span className="text-alert">agente de IA</span> que resolve tudo pra você?
             </h2>
           </div>

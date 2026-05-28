@@ -102,6 +102,11 @@ export function Urgency() {
             </ul>
           </div>
         </div>
+
+        <p className="mt-12 text-lg font-semibold text-white sm:text-xl">
+          Eu sei e você também sabe, clique já no botão abaixo e acesse agora mesmo seu{" "}
+          <span className="text-alert">Agente de IA em 37 minutos</span>
+        </p>
       </div>
     </section>
   );

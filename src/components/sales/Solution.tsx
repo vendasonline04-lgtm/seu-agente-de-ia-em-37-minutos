@@ -34,7 +34,7 @@ export function Solution() {
               O problema não é falta de informação, é informação demais...
             </p>
             <h2 className="text-balance text-xl font-bold leading-tight text-foreground sm:text-2xl md:text-3xl">
-              E se eu te dissesse que você pode ter um <span className="text-alert">agente de IA</span> que resolve tudo pra você?
+              E se eu te dissesse que você pode ter um <span className="text-alert">agente de IA</span> que <span className="text-alert">resolve tudo pra você</span>?
             </h2>
           </div>
         </div>

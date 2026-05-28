@@ -9,7 +9,7 @@ const items = [
 
 export function Recap() {
   return (
-    <section className="bg-background px-4 py-20 text-foreground">
+    <section className="bg-secondary px-4 py-20 text-secondary-foreground">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold sm:text-4xl">
           Recapitulando, veja tudo que você vai receber:
@@ -17,20 +17,20 @@ export function Recap() {
 
         <ul className="mx-auto mt-10 max-w-xl space-y-3 text-left">
           {items.map((it, i) => (
-            <li key={i} className="flex items-center gap-3 rounded-lg bg-muted/60 p-4 ring-1 ring-border">
+            <li key={i} className="flex items-center gap-3 rounded-lg bg-white/5 p-4 ring-1 ring-white/10">
               <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-500">
                 <svg viewBox="0 0 10 10" className="h-3 w-3" fill="none" aria-hidden="true">
                   <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="flex-1 text-lg text-foreground">{it.label}</span>
+              <span className="flex-1 text-lg text-red-400">{it.label}</span>
               <span className="shrink-0 font-bold text-alert line-through">{it.price}</span>
             </li>
           ))}
         </ul>
 
-        <div className="mx-auto mt-4 max-w-xl rounded-xl border-2 border-alert/40 bg-muted/60 px-6 py-5">
-          <p className="text-lg font-bold text-foreground">
+        <div className="mx-auto mt-4 max-w-xl rounded-xl border-2 border-white/20 bg-white/10 px-6 py-5">
+          <p className="text-lg font-bold text-red-400">
             Tudo isso você pagaria um total de:
           </p>
           <p className="mt-1 text-4xl font-extrabold text-alert line-through">R$ 445</p>

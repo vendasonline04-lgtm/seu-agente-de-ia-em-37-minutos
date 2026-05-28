@@ -46,10 +46,10 @@ export function Urgency() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {/* Opção 1 — sem agente */}
           <div
-            className="rounded-2xl p-6 text-left"
+            className="rounded-2xl p-6 text-center"
             style={{ background: "rgba(255,255,255,0.04)", border: "1.5px solid #ef4444" }}
           >
-            <div className="mb-5 flex items-center gap-3">
+            <div className="mb-5 flex items-center justify-center gap-3">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-500">
                 <svg viewBox="0 0 10 10" className="h-4 w-4" fill="none" aria-hidden="true">
                   <path d="M2.5 2.5l5 5M7.5 2.5l-5 5" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
@@ -64,7 +64,7 @@ export function Urgency() {
               {bad.map((item, i) => (
                 <li key={i}>
                   {i > 0 && <div className="my-3 h-px bg-white/10" />}
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-center justify-center gap-3">
                     <XIcon />
                     <span className="text-sm leading-relaxed text-white/85 sm:text-base">{item}</span>
                   </div>
@@ -75,10 +75,10 @@ export function Urgency() {
 
           {/* Opção 2 — com agente */}
           <div
-            className="rounded-2xl p-6 text-left"
+            className="rounded-2xl p-6 text-center"
             style={{ background: "rgba(255,255,255,0.04)", border: "1.5px solid #7c3aed" }}
           >
-            <div className="mb-5 flex items-center gap-3">
+            <div className="mb-5 flex items-center justify-center gap-3">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-violet-500">
                 <svg viewBox="0 0 10 10" className="h-4 w-4" fill="none" aria-hidden="true">
                   <path d="M2 5l2.5 2.5 3.5-4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -93,7 +93,7 @@ export function Urgency() {
               {good.map((item, i) => (
                 <li key={i}>
                   {i > 0 && <div className="my-3 h-px bg-white/10" />}
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-center justify-center gap-3">
                     <CheckIcon />
                     <span className="text-sm leading-relaxed text-white/85 sm:text-base">{item}</span>
                   </div>

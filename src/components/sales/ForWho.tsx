@@ -1,4 +1,4 @@
-import doresMenina from "@/assets/DoresMenina.jpg";
+import doresMenina from "@/assets/meninapreocupadarealista.png";
 
 const items = [
   "Fica perdida com tanta informação e não sai do lugar",

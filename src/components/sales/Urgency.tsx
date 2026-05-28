@@ -34,9 +34,9 @@ function CheckIcon() {
 
 export function Urgency() {
   return (
-    <section style={{ background: "#110820" }} className="px-4 py-20 text-white">
+    <section className="bg-primary px-4 py-20 text-white">
       <div className="mx-auto max-w-5xl text-center">
-        <h2 className="text-4xl font-black sm:text-5xl md:text-6xl">
+        <h2 className="text-3xl font-bold sm:text-4xl">
           Agora você tem 2 opções:
         </h2>
         <p className="mt-4 text-lg text-white/70">

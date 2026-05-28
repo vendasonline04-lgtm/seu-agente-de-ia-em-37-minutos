@@ -47,7 +47,7 @@ export function Deliverables() {
     <section className="bg-primary px-4 py-20 text-primary-foreground">
       <div className="mx-auto max-w-2xl">
         <h2 className="text-balance text-center text-2xl font-bold sm:text-3xl">
-          Veja tudo que você vai receber para criar o seu agente em 37 minutos:
+          Veja tudo que você vai receber para criar o seu <span className="text-alert">agente em 37 minutos</span>:
         </h2>
 
         <ul className="mt-12 space-y-4">

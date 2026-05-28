@@ -1,11 +1,5 @@
 import { Mail, Download, PlayCircle } from "lucide-react";
 
-const steps = [
-  { Icon: Mail,        label: "Receba seu acesso por email" },
-  { Icon: Download,    label: "Baixe os materiais"          },
-  { Icon: PlayCircle,  label: "Agora é só assistir a aula!" },
-];
-
 export function DeliverySteps() {
   return (
     <section className="bg-secondary px-4 py-16 text-white">
@@ -15,17 +9,24 @@ export function DeliverySteps() {
         </h2>
 
         <div className="mt-10 grid grid-cols-3 gap-4">
-          {steps.map(({ Icon, label }) => (
-            <div
-              key={label}
-              className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center"
-            >
-              <Icon className="h-8 w-8 text-accent" />
-              <p className="text-sm font-semibold leading-snug text-foreground">
-                {label}
-              </p>
-            </div>
-          ))}
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center">
+            <Mail className="h-8 w-8 text-accent" />
+            <p className="text-sm font-semibold leading-snug text-foreground">
+              Receba seu acesso por email
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center">
+            <Download className="h-8 w-8 text-accent" />
+            <p className="text-sm font-semibold leading-snug text-foreground">
+              Baixe os materiais
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center">
+            <PlayCircle className="h-8 w-8 text-accent" />
+            <p className="text-sm font-semibold leading-snug text-foreground">
+              Agora é só assistir a aula!
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -189,7 +189,6 @@ function Countdown() {
 
 export function OfferCTA() {
   return (
-    <>
     <section id="oferta" className="bg-background px-4 py-8 text-foreground sm:py-10">
       <div className="mx-auto max-w-3xl">
         <div
@@ -333,8 +332,6 @@ export function OfferCTA() {
         </div>
       </div>
     </section>
-    <DeliverySteps />
-    </>
   );
 }
 
@@ -400,26 +397,6 @@ export function OfferCTA2() {
                 </span>
               </div>
 
-              <div className="mt-3 grid grid-cols-3 gap-2 w-full">
-                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-2 py-4 text-center">
-                  <Mail className="h-6 w-6 text-accent" />
-                  <p className="text-[10px] font-semibold leading-snug text-foreground/70">
-                    Receba seu acesso por email
-                  </p>
-                </div>
-                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-2 py-4 text-center">
-                  <Download className="h-6 w-6 text-accent" />
-                  <p className="text-[10px] font-semibold leading-snug text-foreground/70">
-                    Baixe os materiais
-                  </p>
-                </div>
-                <div className="flex flex-col items-center gap-2 rounded-xl border border-border bg-muted/40 px-2 py-4 text-center">
-                  <PlayCircle className="h-6 w-6 text-accent" />
-                  <p className="text-[10px] font-semibold leading-snug text-foreground/70">
-                    Agora é só assistir a aula!
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
